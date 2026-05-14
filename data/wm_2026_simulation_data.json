@@ -1,0 +1,4185 @@
+{
+  "source": {
+    "matches": "FIFA calendar API cache wm_2026_matches_fifa.json",
+    "fifaRanking": "FIFA/Coca-Cola Men's World Ranking API cache fifa_mens_ranking_latest.json",
+    "historicResults": "https://github.com/martj42/international_results/raw/master/results.csv",
+    "elo": "Elo-style ratings computed locally from historic international results."
+  },
+  "settings": {
+    "runs": 5000,
+    "hostBonusRatingPoints": 55,
+    "hosts": [
+      "CAN",
+      "MEX",
+      "USA"
+    ]
+  },
+  "calibration": {
+    "recentGamesSince2014": 11700,
+    "drawRate": 0.27,
+    "avgGoals": 2.7246,
+    "neutralShare": 0.3068,
+    "homeWinShareNonNeutral": 0.5083,
+    "note": "Updated May 12, 2026: Jan-Mar 2026 actual draw rate = 27.88% (46/165 matches)"
+  },
+  "teams": {
+    "FRA": {
+      "name": "France",
+      "rank": 1,
+      "fifaPoints": 1877.32,
+      "elo": 2110.3
+    },
+    "ESP": {
+      "name": "Spain",
+      "rank": 2,
+      "fifaPoints": 1876.4,
+      "elo": 2192.6
+    },
+    "ARG": {
+      "name": "Argentina",
+      "rank": 3,
+      "fifaPoints": 1874.81,
+      "elo": 2150.6
+    },
+    "ENG": {
+      "name": "England",
+      "rank": 4,
+      "fifaPoints": 1825.97,
+      "elo": 2055
+    },
+    "POR": {
+      "name": "Portugal",
+      "rank": 5,
+      "fifaPoints": 1763.83,
+      "elo": 2033.4
+    },
+    "BRA": {
+      "name": "Brazil",
+      "rank": 6,
+      "fifaPoints": 1761.16,
+      "elo": 2027.6
+    },
+    "NED": {
+      "name": "Netherlands",
+      "rank": 7,
+      "fifaPoints": 1757.87,
+      "elo": 1999
+    },
+    "MAR": {
+      "name": "Morocco",
+      "rank": 8,
+      "fifaPoints": 1755.87,
+      "elo": 1964.9
+    },
+    "BEL": {
+      "name": "Belgium",
+      "rank": 9,
+      "fifaPoints": 1734.71,
+      "elo": 1899.6
+    },
+    "GER": {
+      "name": "Germany",
+      "rank": 10,
+      "fifaPoints": 1730.37,
+      "elo": 1981.7
+    },
+    "CRO": {
+      "name": "Croatia",
+      "rank": 11,
+      "fifaPoints": 1717.07,
+      "elo": 1966.8
+    },
+    "ITA": {
+      "name": "Italy",
+      "rank": 12,
+      "fifaPoints": 1700.37,
+      "elo": 1910.9
+    },
+    "COL": {
+      "name": "Colombia",
+      "rank": 13,
+      "fifaPoints": 1693.09,
+      "elo": 2024.7
+    },
+    "SEN": {
+      "name": "Senegal",
+      "rank": 14,
+      "fifaPoints": 1688.99,
+      "elo": 1902
+    },
+    "MEX": {
+      "name": "Mexico",
+      "rank": 15,
+      "fifaPoints": 1681.03,
+      "elo": 1944.7
+    },
+    "USA": {
+      "name": "USA",
+      "rank": 16,
+      "fifaPoints": 1673.13,
+      "elo": 1826.7
+    },
+    "URU": {
+      "name": "Uruguay",
+      "rank": 17,
+      "fifaPoints": 1673.07,
+      "elo": 1948.8
+    },
+    "JPN": {
+      "name": "Japan",
+      "rank": 18,
+      "fifaPoints": 1660.43,
+      "elo": 1973.1
+    },
+    "SUI": {
+      "name": "Switzerland",
+      "rank": 19,
+      "fifaPoints": 1649.4,
+      "elo": 1915.5
+    },
+    "DEN": {
+      "name": "Denmark",
+      "rank": 20,
+      "fifaPoints": 1620.81,
+      "elo": 1910.6
+    },
+    "IRN": {
+      "name": "IR Iran",
+      "rank": 21,
+      "fifaPoints": 1615.3,
+      "elo": 1868.6
+    },
+    "TUR": {
+      "name": "Türkiye",
+      "rank": 22,
+      "fifaPoints": 1599.04,
+      "elo": 1932.1
+    },
+    "ECU": {
+      "name": "Ecuador",
+      "rank": 23,
+      "fifaPoints": 1594.78,
+      "elo": 1989.6
+    },
+    "AUT": {
+      "name": "Austria",
+      "rank": 24,
+      "fifaPoints": 1593.45,
+      "elo": 1859.3
+    },
+    "KOR": {
+      "name": "Korea Republic",
+      "rank": 25,
+      "fifaPoints": 1588.66,
+      "elo": 1853.7
+    },
+    "NGA": {
+      "name": "Nigeria",
+      "rank": 26,
+      "fifaPoints": 1585.09,
+      "elo": 1837.8
+    },
+    "AUS": {
+      "name": "Australia",
+      "rank": 27,
+      "fifaPoints": 1580.67,
+      "elo": 1891.9
+    },
+    "ALG": {
+      "name": "Algeria",
+      "rank": 28,
+      "fifaPoints": 1564.26,
+      "elo": 1842.5
+    },
+    "EGY": {
+      "name": "Egypt",
+      "rank": 29,
+      "fifaPoints": 1563.24,
+      "elo": 1789.4
+    },
+    "CAN": {
+      "name": "Canada",
+      "rank": 30,
+      "fifaPoints": 1556.48,
+      "elo": 1879.5
+    },
+    "NOR": {
+      "name": "Norway",
+      "rank": 31,
+      "fifaPoints": 1550.94,
+      "elo": 1943.3
+    },
+    "UKR": {
+      "name": "Ukraine",
+      "rank": 32,
+      "fifaPoints": 1546.88,
+      "elo": 1808.4
+    },
+    "PAN": {
+      "name": "Panama",
+      "rank": 33,
+      "fifaPoints": 1540.64,
+      "elo": 1846.4
+    },
+    "CIV": {
+      "name": "Côte d'Ivoire",
+      "rank": 34,
+      "fifaPoints": 1532.98,
+      "elo": 1776.2
+    },
+    "POL": {
+      "name": "Poland",
+      "rank": 35,
+      "fifaPoints": 1528,
+      "elo": 1771.3
+    },
+    "RUS": {
+      "name": "Russia",
+      "rank": 36,
+      "fifaPoints": 1525.6,
+      "elo": 1824.1
+    },
+    "WAL": {
+      "name": "Wales",
+      "rank": 37,
+      "fifaPoints": 1524.29,
+      "elo": 1756.9
+    },
+    "SWE": {
+      "name": "Sweden",
+      "rank": 38,
+      "fifaPoints": 1514.77,
+      "elo": 1766.2
+    },
+    "SRB": {
+      "name": "Serbia",
+      "rank": 39,
+      "fifaPoints": 1508.65,
+      "elo": 1815.7
+    },
+    "PAR": {
+      "name": "Paraguay",
+      "rank": 40,
+      "fifaPoints": 1503.5,
+      "elo": 1887.6
+    },
+    "CZE": {
+      "name": "Czechia",
+      "rank": 41,
+      "fifaPoints": 1501.38,
+      "elo": 1765.1
+    },
+    "HUN": {
+      "name": "Hungary",
+      "rank": 42,
+      "fifaPoints": 1500.58,
+      "elo": 1751.8
+    },
+    "SCO": {
+      "name": "Scotland",
+      "rank": 43,
+      "fifaPoints": 1498.35,
+      "elo": 1811.5
+    },
+    "TUN": {
+      "name": "Tunisia",
+      "rank": 44,
+      "fifaPoints": 1483.05,
+      "elo": 1734.6
+    },
+    "CMR": {
+      "name": "Cameroon",
+      "rank": 45,
+      "fifaPoints": 1481.24,
+      "elo": 1713.7
+    },
+    "COD": {
+      "name": "Congo DR",
+      "rank": 46,
+      "fifaPoints": 1478.35,
+      "elo": 1743.2
+    },
+    "GRE": {
+      "name": "Greece",
+      "rank": 47,
+      "fifaPoints": 1475.82,
+      "elo": 1803.5
+    },
+    "SVK": {
+      "name": "Slovakia",
+      "rank": 48,
+      "fifaPoints": 1473.94,
+      "elo": 1706
+    },
+    "VEN": {
+      "name": "Venezuela",
+      "rank": 49,
+      "fifaPoints": 1468.05,
+      "elo": 1801.9
+    },
+    "UZB": {
+      "name": "Uzbekistan",
+      "rank": 50,
+      "fifaPoints": 1465.34,
+      "elo": 1817.5
+    },
+    "CRC": {
+      "name": "Costa Rica",
+      "rank": 51,
+      "fifaPoints": 1459.9,
+      "elo": 1744.3
+    },
+    "MLI": {
+      "name": "Mali",
+      "rank": 52,
+      "fifaPoints": 1459.13,
+      "elo": 1701.6
+    },
+    "PER": {
+      "name": "Peru",
+      "rank": 53,
+      "fifaPoints": 1455.87,
+      "elo": 1752.9
+    },
+    "CHI": {
+      "name": "Chile",
+      "rank": 54,
+      "fifaPoints": 1455.28,
+      "elo": 1775.6
+    },
+    "QAT": {
+      "name": "Qatar",
+      "rank": 55,
+      "fifaPoints": 1454.96,
+      "elo": 1587.4
+    },
+    "ROU": {
+      "name": "Romania",
+      "rank": 56,
+      "fifaPoints": 1451.16,
+      "elo": 1684.4
+    },
+    "IRQ": {
+      "name": "Iraq",
+      "rank": 57,
+      "fifaPoints": 1447.14,
+      "elo": 1739.7
+    },
+    "SVN": {
+      "name": "Slovenia",
+      "rank": 58,
+      "fifaPoints": 1446.44,
+      "elo": 1739.8
+    },
+    "IRL": {
+      "name": "Republic of Ireland",
+      "rank": 59,
+      "fifaPoints": 1436.63,
+      "elo": 1730.9
+    },
+    "RSA": {
+      "name": "South Africa",
+      "rank": 60,
+      "fifaPoints": 1429.73,
+      "elo": 1652.4
+    },
+    "KSA": {
+      "name": "Saudi Arabia",
+      "rank": 61,
+      "fifaPoints": 1421.43,
+      "elo": 1684.2
+    },
+    "BFA": {
+      "name": "Burkina Faso",
+      "rank": 62,
+      "fifaPoints": 1412.49,
+      "elo": 1649.2
+    },
+    "JOR": {
+      "name": "Jordan",
+      "rank": 63,
+      "fifaPoints": 1391.45,
+      "elo": 1772.4
+    },
+    "ALB": {
+      "name": "Albania",
+      "rank": 64,
+      "fifaPoints": 1388.06,
+      "elo": 1682.8
+    },
+    "BIH": {
+      "name": "Bosnia and Herzegovina",
+      "rank": 65,
+      "fifaPoints": 1385.84,
+      "elo": 1642.8
+    },
+    "HON": {
+      "name": "Honduras",
+      "rank": 66,
+      "fifaPoints": 1380.27,
+      "elo": 1709.8
+    },
+    "MKD": {
+      "name": "North Macedonia",
+      "rank": 67,
+      "fifaPoints": 1372.04,
+      "elo": 1634.8
+    },
+    "UAE": {
+      "name": "United Arab Emirates",
+      "rank": 68,
+      "fifaPoints": 1370.47,
+      "elo": 1658.9
+    },
+    "CPV": {
+      "name": "Cabo Verde",
+      "rank": 69,
+      "fifaPoints": 1366.13,
+      "elo": 1647.1
+    },
+    "NIR": {
+      "name": "Northern Ireland",
+      "rank": 70,
+      "fifaPoints": 1362.16,
+      "elo": 1629.5
+    },
+    "JAM": {
+      "name": "Jamaica",
+      "rank": 71,
+      "fifaPoints": 1358,
+      "elo": 1682.6
+    },
+    "GEO": {
+      "name": "Georgia",
+      "rank": 72,
+      "fifaPoints": 1350.18,
+      "elo": 1688.3
+    },
+    "FIN": {
+      "name": "Finland",
+      "rank": 73,
+      "fifaPoints": 1346.41,
+      "elo": 1584.2
+    },
+    "GHA": {
+      "name": "Ghana",
+      "rank": 74,
+      "fifaPoints": 1346.31,
+      "elo": 1620.6
+    },
+    "ISL": {
+      "name": "Iceland",
+      "rank": 75,
+      "fifaPoints": 1345.07,
+      "elo": 1613.6
+    },
+    "BOL": {
+      "name": "Bolivia",
+      "rank": 76,
+      "fifaPoints": 1329.42,
+      "elo": 1726.3
+    },
+    "ISR": {
+      "name": "Israel",
+      "rank": 77,
+      "fifaPoints": 1328.33,
+      "elo": 1674
+    },
+    "KOS": {
+      "name": "Kosovo",
+      "rank": 78,
+      "fifaPoints": 1318.83,
+      "elo": 1754.4
+    },
+    "OMA": {
+      "name": "Oman",
+      "rank": 79,
+      "fifaPoints": 1313.46,
+      "elo": 1595.2
+    },
+    "GUI": {
+      "name": "Guinea",
+      "rank": 80,
+      "fifaPoints": 1300.01,
+      "elo": 1575.9
+    },
+    "MNE": {
+      "name": "Montenegro",
+      "rank": 81,
+      "fifaPoints": 1295.52,
+      "elo": 1496
+    },
+    "CUW": {
+      "name": "Curaçao",
+      "rank": 82,
+      "fifaPoints": 1294.65,
+      "elo": 1610.9
+    },
+    "HAI": {
+      "name": "Haiti",
+      "rank": 83,
+      "fifaPoints": 1291.71,
+      "elo": 1688.7
+    },
+    "SYR": {
+      "name": "Syria",
+      "rank": 84,
+      "fifaPoints": 1288.56,
+      "elo": 1603.3
+    },
+    "NZL": {
+      "name": "New Zealand",
+      "rank": 85,
+      "fifaPoints": 1281.57,
+      "elo": 1753.9
+    },
+    "BUL": {
+      "name": "Bulgaria",
+      "rank": 86,
+      "fifaPoints": 1278.9,
+      "elo": 1546.6
+    },
+    "GAB": {
+      "name": "Gabon",
+      "rank": 87,
+      "fifaPoints": 1272.51,
+      "elo": 1523.7
+    },
+    "UGA": {
+      "name": "Uganda",
+      "rank": 88,
+      "fifaPoints": 1264.09,
+      "elo": 1520.3
+    },
+    "ANG": {
+      "name": "Angola",
+      "rank": 89,
+      "fifaPoints": 1263.1,
+      "elo": 1573.4
+    },
+    "BEN": {
+      "name": "Benin",
+      "rank": 90,
+      "fifaPoints": 1258.98,
+      "elo": 1555.3
+    },
+    "BHR": {
+      "name": "Bahrain",
+      "rank": 91,
+      "fifaPoints": 1258.53,
+      "elo": 1549.2
+    },
+    "ZAM": {
+      "name": "Zambia",
+      "rank": 92,
+      "fifaPoints": 1255.82,
+      "elo": 1547.2
+    },
+    "THA": {
+      "name": "Thailand",
+      "rank": 93,
+      "fifaPoints": 1252.14,
+      "elo": 1540.5
+    },
+    "CHN": {
+      "name": "China PR",
+      "rank": 94,
+      "fifaPoints": 1251.6,
+      "elo": 1553.7
+    },
+    "PLE": {
+      "name": "Palestine",
+      "rank": 95,
+      "fifaPoints": 1244.73,
+      "elo": 1582.2
+    },
+    "GUA": {
+      "name": "Guatemala",
+      "rank": 96,
+      "fifaPoints": 1243.47,
+      "elo": 1654.1
+    },
+    "BLR": {
+      "name": "Belarus",
+      "rank": 97,
+      "fifaPoints": 1235.82,
+      "elo": 1554.7
+    },
+    "LUX": {
+      "name": "Luxembourg",
+      "rank": 98,
+      "fifaPoints": 1227.77,
+      "elo": 1437.1
+    },
+    "VIE": {
+      "name": "Vietnam",
+      "rank": 99,
+      "fifaPoints": 1225.68,
+      "elo": 1473.9
+    },
+    "SLV": {
+      "name": "El Salvador",
+      "rank": 100,
+      "fifaPoints": 1225.26,
+      "elo": 1494.7
+    },
+    "MOZ": {
+      "name": "Mozambique",
+      "rank": 101,
+      "fifaPoints": 1224.31,
+      "elo": 1495.6
+    },
+    "TRI": {
+      "name": "Trinidad and Tobago",
+      "rank": 102,
+      "fifaPoints": 1222.94,
+      "elo": 1549.4
+    },
+    "TJK": {
+      "name": "Tajikistan",
+      "rank": 103,
+      "fifaPoints": 1221.78,
+      "elo": 1443.4
+    },
+    "MAD": {
+      "name": "Madagascar",
+      "rank": 104,
+      "fifaPoints": 1203.76,
+      "elo": 1498.1
+    },
+    "EQG": {
+      "name": "Equatorial Guinea",
+      "rank": 105,
+      "fifaPoints": 1195.2,
+      "elo": 1458.2
+    },
+    "ARM": {
+      "name": "Armenia",
+      "rank": 106,
+      "fifaPoints": 1191.42,
+      "elo": 1426.3
+    },
+    "KGZ": {
+      "name": "Kyrgyz Republic",
+      "rank": 107,
+      "fifaPoints": 1191.14,
+      "elo": 1500
+    },
+    "LBN": {
+      "name": "Lebanon",
+      "rank": 108,
+      "fifaPoints": 1187.96,
+      "elo": 1445.9
+    },
+    "COM": {
+      "name": "Comoros",
+      "rank": 109,
+      "fifaPoints": 1187.91,
+      "elo": 1474.5
+    },
+    "KAZ": {
+      "name": "Kazakhstan",
+      "rank": 110,
+      "fifaPoints": 1182.96,
+      "elo": 1496.6
+    },
+    "KEN": {
+      "name": "Kenya",
+      "rank": 111,
+      "fifaPoints": 1182.23,
+      "elo": 1474.8
+    },
+    "LBY": {
+      "name": "Libya",
+      "rank": 112,
+      "fifaPoints": 1182.08,
+      "elo": 1524.4
+    },
+    "TAN": {
+      "name": "Tanzania",
+      "rank": 113,
+      "fifaPoints": 1180.27,
+      "elo": 1424
+    },
+    "NIG": {
+      "name": "Niger",
+      "rank": 114,
+      "fifaPoints": 1179.66,
+      "elo": 1498.9
+    },
+    "MTN": {
+      "name": "Mauritania",
+      "rank": 115,
+      "fifaPoints": 1170.72,
+      "elo": 1434.8
+    },
+    "GAM": {
+      "name": "The Gambia",
+      "rank": 116,
+      "fifaPoints": 1160.38,
+      "elo": 1500
+    },
+    "SDN": {
+      "name": "Sudan",
+      "rank": 117,
+      "fifaPoints": 1157.22,
+      "elo": 1472.2
+    },
+    "PRK": {
+      "name": "Korea DPR",
+      "rank": 118,
+      "fifaPoints": 1151.05,
+      "elo": 1500
+    },
+    "SLE": {
+      "name": "Sierra Leone",
+      "rank": 119,
+      "fifaPoints": 1148.98,
+      "elo": 1471
+    },
+    "NAM": {
+      "name": "Namibia",
+      "rank": 120,
+      "fifaPoints": 1148.84,
+      "elo": 1427.7
+    },
+    "TOG": {
+      "name": "Togo",
+      "rank": 121,
+      "fifaPoints": 1147.31,
+      "elo": 1476.9
+    },
+    "IDN": {
+      "name": "Indonesia",
+      "rank": 122,
+      "fifaPoints": 1144.88,
+      "elo": 1479.8
+    },
+    "FRO": {
+      "name": "Faroe Islands",
+      "rank": 123,
+      "fifaPoints": 1137.14,
+      "elo": 1439.3
+    },
+    "AZE": {
+      "name": "Azerbaijan",
+      "rank": 124,
+      "fifaPoints": 1136.67,
+      "elo": 1408.5
+    },
+    "SUR": {
+      "name": "Suriname",
+      "rank": 125,
+      "fifaPoints": 1132.43,
+      "elo": 1594.5
+    },
+    "CYP": {
+      "name": "Cyprus",
+      "rank": 126,
+      "fifaPoints": 1128.33,
+      "elo": 1364.6
+    },
+    "MWI": {
+      "name": "Malawi",
+      "rank": 127,
+      "fifaPoints": 1128.03,
+      "elo": 1441.6
+    },
+    "RWA": {
+      "name": "Rwanda",
+      "rank": 128,
+      "fifaPoints": 1126.62,
+      "elo": 1454.1
+    },
+    "EST": {
+      "name": "Estonia",
+      "rank": 129,
+      "fifaPoints": 1121.1,
+      "elo": 1404.4
+    },
+    "ZIM": {
+      "name": "Zimbabwe",
+      "rank": 130,
+      "fifaPoints": 1118.12,
+      "elo": 1468.6
+    },
+    "NCA": {
+      "name": "Nicaragua",
+      "rank": 131,
+      "fifaPoints": 1115.13,
+      "elo": 1509.1
+    },
+    "GNB": {
+      "name": "Guinea-Bissau",
+      "rank": 132,
+      "fifaPoints": 1108.38,
+      "elo": 1374.2
+    },
+    "CGO": {
+      "name": "Congo",
+      "rank": 133,
+      "fifaPoints": 1105.96,
+      "elo": 1343.8
+    },
+    "KUW": {
+      "name": "Kuwait",
+      "rank": 134,
+      "fifaPoints": 1105.1,
+      "elo": 1478.5
+    },
+    "PHI": {
+      "name": "Philippines",
+      "rank": 135,
+      "fifaPoints": 1094.1,
+      "elo": 1336.7
+    },
+    "IND": {
+      "name": "India",
+      "rank": 136,
+      "fifaPoints": 1091.03,
+      "elo": 1265.3
+    },
+    "LVA": {
+      "name": "Latvia",
+      "rank": 137,
+      "fifaPoints": 1090.57,
+      "elo": 1335.9
+    },
+    "MAS": {
+      "name": "Malaysia",
+      "rank": 138,
+      "fifaPoints": 1086.22,
+      "elo": 1491.5
+    },
+    "CTA": {
+      "name": "Central African Republic",
+      "rank": 139,
+      "fifaPoints": 1083.57,
+      "elo": 1373.2
+    },
+    "LBR": {
+      "name": "Liberia",
+      "rank": 140,
+      "fifaPoints": 1079.02,
+      "elo": 1424.7
+    },
+    "TKM": {
+      "name": "Turkmenistan",
+      "rank": 141,
+      "fifaPoints": 1078.65,
+      "elo": 1392
+    },
+    "BDI": {
+      "name": "Burundi",
+      "rank": 142,
+      "fifaPoints": 1078.01,
+      "elo": 1394.1
+    },
+    "DOM": {
+      "name": "Dominican Republic",
+      "rank": 143,
+      "fifaPoints": 1077.95,
+      "elo": 1493.3
+    },
+    "ETH": {
+      "name": "Ethiopia",
+      "rank": 144,
+      "fifaPoints": 1071.55,
+      "elo": 1395.4
+    },
+    "LES": {
+      "name": "Lesotho",
+      "rank": 145,
+      "fifaPoints": 1067.13,
+      "elo": 1412.4
+    },
+    "BOT": {
+      "name": "Botswana",
+      "rank": 146,
+      "fifaPoints": 1063.63,
+      "elo": 1396.3
+    },
+    "SGP": {
+      "name": "Singapore",
+      "rank": 147,
+      "fifaPoints": 1059.53,
+      "elo": 1317.5
+    },
+    "LTU": {
+      "name": "Lithuania",
+      "rank": 148,
+      "fifaPoints": 1058.42,
+      "elo": 1328.8
+    },
+    "YEM": {
+      "name": "Yemen",
+      "rank": 149,
+      "fifaPoints": 1049.49,
+      "elo": 1313.6
+    },
+    "GUY": {
+      "name": "Guyana",
+      "rank": 150,
+      "fifaPoints": 1049.32,
+      "elo": 1494.9
+    },
+    "NCL": {
+      "name": "New Caledonia",
+      "rank": 151,
+      "fifaPoints": 1036.95,
+      "elo": 1605.6
+    },
+    "SKN": {
+      "name": "St Kitts and Nevis",
+      "rank": 152,
+      "fifaPoints": 1036.33,
+      "elo": 1500
+    },
+    "SOL": {
+      "name": "Solomon Islands",
+      "rank": 153,
+      "fifaPoints": 1031.89,
+      "elo": 1400.6
+    },
+    "FIJ": {
+      "name": "Fiji",
+      "rank": 154,
+      "fifaPoints": 1029.7,
+      "elo": 1452.4
+    },
+    "HKG": {
+      "name": "Hong Kong, China",
+      "rank": 155,
+      "fifaPoints": 1026.63,
+      "elo": 1500
+    },
+    "PUR": {
+      "name": "Puerto Rico",
+      "rank": 156,
+      "fifaPoints": 1026.11,
+      "elo": 1383
+    },
+    "TAH": {
+      "name": "Tahiti",
+      "rank": 157,
+      "fifaPoints": 1019.04,
+      "elo": 1524.9
+    },
+    "MYA": {
+      "name": "Myanmar",
+      "rank": 158,
+      "fifaPoints": 1011.88,
+      "elo": 1141.4
+    },
+    "MDA": {
+      "name": "Moldova",
+      "rank": 159,
+      "fifaPoints": 1004.16,
+      "elo": 1323.8
+    },
+    "VAN": {
+      "name": "Vanuatu",
+      "rank": 160,
+      "fifaPoints": 997.01,
+      "elo": 1452.8
+    },
+    "MLT": {
+      "name": "Malta",
+      "rank": 161,
+      "fifaPoints": 987.73,
+      "elo": 1330.5
+    },
+    "ATG": {
+      "name": "Antigua and Barbuda",
+      "rank": 162,
+      "fifaPoints": 986.58,
+      "elo": 1108.8
+    },
+    "GRN": {
+      "name": "Grenada",
+      "rank": 163,
+      "fifaPoints": 982.57,
+      "elo": 1303.4
+    },
+    "CUB": {
+      "name": "Cuba",
+      "rank": 164,
+      "fifaPoints": 981.42,
+      "elo": 1416.5
+    },
+    "SWZ": {
+      "name": "Eswatini",
+      "rank": 165,
+      "fifaPoints": 979.01,
+      "elo": 1318.5
+    },
+    "BER": {
+      "name": "Bermuda",
+      "rank": 166,
+      "fifaPoints": 976.87,
+      "elo": 1317
+    },
+    "LCA": {
+      "name": "St Lucia",
+      "rank": 167,
+      "fifaPoints": 976.71,
+      "elo": 1500
+    },
+    "PNG": {
+      "name": "Papua New Guinea",
+      "rank": 168,
+      "fifaPoints": 974.9,
+      "elo": 1473.7
+    },
+    "AFG": {
+      "name": "Afghanistan",
+      "rank": 169,
+      "fifaPoints": 972.75,
+      "elo": 1235.1
+    },
+    "SSD": {
+      "name": "South Sudan",
+      "rank": 170,
+      "fifaPoints": 970.94,
+      "elo": 1275.6
+    },
+    "VIN": {
+      "name": "St Vincent and the Grenadines",
+      "rank": 171,
+      "fifaPoints": 968.27,
+      "elo": 1500
+    },
+    "MDV": {
+      "name": "Maldives",
+      "rank": 172,
+      "fifaPoints": 954.93,
+      "elo": 1067.8
+    },
+    "AND": {
+      "name": "Andorra",
+      "rank": 173,
+      "fifaPoints": 945.34,
+      "elo": 1140.2
+    },
+    "TPE": {
+      "name": "Chinese Taipei",
+      "rank": 174,
+      "fifaPoints": 923.78,
+      "elo": 1500
+    },
+    "MSR": {
+      "name": "Montserrat",
+      "rank": 175,
+      "fifaPoints": 916.75,
+      "elo": 1235.5
+    },
+    "NEP": {
+      "name": "Nepal",
+      "rank": 176,
+      "fifaPoints": 914.54,
+      "elo": 1116.1
+    },
+    "CAM": {
+      "name": "Cambodia",
+      "rank": 177,
+      "fifaPoints": 911.54,
+      "elo": 1070.6
+    },
+    "MRI": {
+      "name": "Mauritius",
+      "rank": 178,
+      "fifaPoints": 911.49,
+      "elo": 1223
+    },
+    "BRB": {
+      "name": "Barbados",
+      "rank": 179,
+      "fifaPoints": 909.89,
+      "elo": 1140.3
+    },
+    "BLZ": {
+      "name": "Belize",
+      "rank": 180,
+      "fifaPoints": 907,
+      "elo": 1300.5
+    },
+    "BAN": {
+      "name": "Bangladesh",
+      "rank": 181,
+      "fifaPoints": 899.53,
+      "elo": 1143.3
+    },
+    "DMA": {
+      "name": "Dominica",
+      "rank": 182,
+      "fifaPoints": 897.69,
+      "elo": 1164.2
+    },
+    "CHA": {
+      "name": "Chad",
+      "rank": 183,
+      "fifaPoints": 896.85,
+      "elo": 1261.7
+    },
+    "ERI": {
+      "name": "Eritrea",
+      "rank": 184,
+      "fifaPoints": 887.06,
+      "elo": 1220.5
+    },
+    "LAO": {
+      "name": "Laos",
+      "rank": 185,
+      "fifaPoints": 885.03,
+      "elo": 971.7
+    },
+    "BHU": {
+      "name": "Bhutan",
+      "rank": 186,
+      "fifaPoints": 880.55,
+      "elo": 885.5
+    },
+    "MNG": {
+      "name": "Mongolia",
+      "rank": 187,
+      "fifaPoints": 879.75,
+      "elo": 1012
+    },
+    "COK": {
+      "name": "Cook Islands",
+      "rank": 188,
+      "fifaPoints": 877.53,
+      "elo": 1173.2
+    },
+    "ARU": {
+      "name": "Aruba",
+      "rank": 189,
+      "fifaPoints": 877.3,
+      "elo": 1212.3
+    },
+    "SAM": {
+      "name": "Samoa",
+      "rank": 190,
+      "fifaPoints": 876.41,
+      "elo": 1264.2
+    },
+    "SRI": {
+      "name": "Sri Lanka",
+      "rank": 191,
+      "fifaPoints": 871.82,
+      "elo": 1033.1
+    },
+    "ASA": {
+      "name": "American Samoa",
+      "rank": 192,
+      "fifaPoints": 871.61,
+      "elo": 952.3
+    },
+    "BRU": {
+      "name": "Brunei Darussalam",
+      "rank": 193,
+      "fifaPoints": 863.09,
+      "elo": 1500
+    },
+    "MAC": {
+      "name": "Macau",
+      "rank": 194,
+      "fifaPoints": 858.03,
+      "elo": 866.3
+    },
+    "CAY": {
+      "name": "Cayman Islands",
+      "rank": 195,
+      "fifaPoints": 855.45,
+      "elo": 1064.5
+    },
+    "STP": {
+      "name": "São Tomé and Príncipe",
+      "rank": 196,
+      "fifaPoints": 855.44,
+      "elo": 1189.7
+    },
+    "DJI": {
+      "name": "Djibouti",
+      "rank": 197,
+      "fifaPoints": 853.58,
+      "elo": 1076.1
+    },
+    "SOM": {
+      "name": "Somalia",
+      "rank": 198,
+      "fifaPoints": 839.17,
+      "elo": 1074
+    },
+    "TGA": {
+      "name": "Tonga",
+      "rank": 199,
+      "fifaPoints": 835.64,
+      "elo": 1094.7
+    },
+    "TLS": {
+      "name": "Timor-Leste",
+      "rank": 200,
+      "fifaPoints": 825.64,
+      "elo": 918.2
+    },
+    "GUM": {
+      "name": "Guam",
+      "rank": 201,
+      "fifaPoints": 825.43,
+      "elo": 1021.9
+    },
+    "PAK": {
+      "name": "Pakistan",
+      "rank": 202,
+      "fifaPoints": 824.6,
+      "elo": 1044
+    },
+    "GIB": {
+      "name": "Gibraltar",
+      "rank": 203,
+      "fifaPoints": 810.14,
+      "elo": 1115
+    },
+    "SEY": {
+      "name": "Seychelles",
+      "rank": 204,
+      "fifaPoints": 804.16,
+      "elo": 1024.2
+    },
+    "TCA": {
+      "name": "Turks and Caicos Islands",
+      "rank": 205,
+      "fifaPoints": 803.98,
+      "elo": 989.6
+    },
+    "LIE": {
+      "name": "Liechtenstein",
+      "rank": 206,
+      "fifaPoints": 803.57,
+      "elo": 996.5
+    },
+    "BAH": {
+      "name": "Bahamas",
+      "rank": 207,
+      "fifaPoints": 786.82,
+      "elo": 958.3
+    },
+    "VGB": {
+      "name": "British Virgin Islands",
+      "rank": 208,
+      "fifaPoints": 782.14,
+      "elo": 1015.4
+    },
+    "VIR": {
+      "name": "US Virgin Islands",
+      "rank": 209,
+      "fifaPoints": 779.76,
+      "elo": 1500
+    },
+    "AIA": {
+      "name": "Anguilla",
+      "rank": 210,
+      "fifaPoints": 760.25,
+      "elo": 894.7
+    },
+    "SMR": {
+      "name": "San Marino",
+      "rank": 211,
+      "fifaPoints": 726.33,
+      "elo": 935.8
+    }
+  },
+  "groups": {
+    "Group A": {
+      "MEX": {
+        "name": "Mexico",
+        "rank": 15,
+        "fifaPoints": 1681.03,
+        "elo": 1944.7
+      },
+      "RSA": {
+        "name": "South Africa",
+        "rank": 60,
+        "fifaPoints": 1429.73,
+        "elo": 1652.4
+      },
+      "KOR": {
+        "name": "Korea Republic",
+        "rank": 25,
+        "fifaPoints": 1588.66,
+        "elo": 1853.7
+      },
+      "CZE": {
+        "name": "Czechia",
+        "rank": 41,
+        "fifaPoints": 1501.38,
+        "elo": 1765.1
+      }
+    },
+    "Group B": {
+      "CAN": {
+        "name": "Canada",
+        "rank": 30,
+        "fifaPoints": 1556.48,
+        "elo": 1879.5
+      },
+      "BIH": {
+        "name": "Bosnia and Herzegovina",
+        "rank": 65,
+        "fifaPoints": 1385.84,
+        "elo": 1642.8
+      },
+      "QAT": {
+        "name": "Qatar",
+        "rank": 55,
+        "fifaPoints": 1454.96,
+        "elo": 1587.4
+      },
+      "SUI": {
+        "name": "Switzerland",
+        "rank": 19,
+        "fifaPoints": 1649.4,
+        "elo": 1915.5
+      }
+    },
+    "Group D": {
+      "USA": {
+        "name": "USA",
+        "rank": 16,
+        "fifaPoints": 1673.13,
+        "elo": 1826.7
+      },
+      "PAR": {
+        "name": "Paraguay",
+        "rank": 40,
+        "fifaPoints": 1503.5,
+        "elo": 1887.6
+      },
+      "AUS": {
+        "name": "Australia",
+        "rank": 27,
+        "fifaPoints": 1580.67,
+        "elo": 1891.9
+      },
+      "TUR": {
+        "name": "Türkiye",
+        "rank": 22,
+        "fifaPoints": 1599.04,
+        "elo": 1932.1
+      }
+    },
+    "Group C": {
+      "HAI": {
+        "name": "Haiti",
+        "rank": 83,
+        "fifaPoints": 1291.71,
+        "elo": 1688.7
+      },
+      "SCO": {
+        "name": "Scotland",
+        "rank": 43,
+        "fifaPoints": 1498.35,
+        "elo": 1811.5
+      },
+      "BRA": {
+        "name": "Brazil",
+        "rank": 6,
+        "fifaPoints": 1761.16,
+        "elo": 2027.6
+      },
+      "MAR": {
+        "name": "Morocco",
+        "rank": 8,
+        "fifaPoints": 1755.87,
+        "elo": 1964.9
+      }
+    },
+    "Group E": {
+      "CIV": {
+        "name": "Côte d'Ivoire",
+        "rank": 34,
+        "fifaPoints": 1532.98,
+        "elo": 1776.2
+      },
+      "ECU": {
+        "name": "Ecuador",
+        "rank": 23,
+        "fifaPoints": 1594.78,
+        "elo": 1989.6
+      },
+      "GER": {
+        "name": "Germany",
+        "rank": 10,
+        "fifaPoints": 1730.37,
+        "elo": 1981.7
+      },
+      "CUW": {
+        "name": "Curaçao",
+        "rank": 82,
+        "fifaPoints": 1294.65,
+        "elo": 1610.9
+      }
+    },
+    "Group F": {
+      "NED": {
+        "name": "Netherlands",
+        "rank": 7,
+        "fifaPoints": 1757.87,
+        "elo": 1999
+      },
+      "JPN": {
+        "name": "Japan",
+        "rank": 18,
+        "fifaPoints": 1660.43,
+        "elo": 1973.1
+      },
+      "SWE": {
+        "name": "Sweden",
+        "rank": 38,
+        "fifaPoints": 1514.77,
+        "elo": 1766.2
+      },
+      "TUN": {
+        "name": "Tunisia",
+        "rank": 44,
+        "fifaPoints": 1483.05,
+        "elo": 1734.6
+      }
+    },
+    "Group H": {
+      "KSA": {
+        "name": "Saudi Arabia",
+        "rank": 61,
+        "fifaPoints": 1421.43,
+        "elo": 1684.2
+      },
+      "URU": {
+        "name": "Uruguay",
+        "rank": 17,
+        "fifaPoints": 1673.07,
+        "elo": 1948.8
+      },
+      "ESP": {
+        "name": "Spain",
+        "rank": 2,
+        "fifaPoints": 1876.4,
+        "elo": 2192.6
+      },
+      "CPV": {
+        "name": "Cabo Verde",
+        "rank": 69,
+        "fifaPoints": 1366.13,
+        "elo": 1647.1
+      }
+    },
+    "Group G": {
+      "IRN": {
+        "name": "IR Iran",
+        "rank": 21,
+        "fifaPoints": 1615.3,
+        "elo": 1868.6
+      },
+      "NZL": {
+        "name": "New Zealand",
+        "rank": 85,
+        "fifaPoints": 1281.57,
+        "elo": 1753.9
+      },
+      "BEL": {
+        "name": "Belgium",
+        "rank": 9,
+        "fifaPoints": 1734.71,
+        "elo": 1899.6
+      },
+      "EGY": {
+        "name": "Egypt",
+        "rank": 29,
+        "fifaPoints": 1563.24,
+        "elo": 1789.4
+      }
+    },
+    "Group I": {
+      "FRA": {
+        "name": "France",
+        "rank": 1,
+        "fifaPoints": 1877.32,
+        "elo": 2110.3
+      },
+      "SEN": {
+        "name": "Senegal",
+        "rank": 14,
+        "fifaPoints": 1688.99,
+        "elo": 1902
+      },
+      "IRQ": {
+        "name": "Iraq",
+        "rank": 57,
+        "fifaPoints": 1447.14,
+        "elo": 1739.7
+      },
+      "NOR": {
+        "name": "Norway",
+        "rank": 31,
+        "fifaPoints": 1550.94,
+        "elo": 1943.3
+      }
+    },
+    "Group J": {
+      "ARG": {
+        "name": "Argentina",
+        "rank": 3,
+        "fifaPoints": 1874.81,
+        "elo": 2150.6
+      },
+      "ALG": {
+        "name": "Algeria",
+        "rank": 28,
+        "fifaPoints": 1564.26,
+        "elo": 1842.5
+      },
+      "AUT": {
+        "name": "Austria",
+        "rank": 24,
+        "fifaPoints": 1593.45,
+        "elo": 1859.3
+      },
+      "JOR": {
+        "name": "Jordan",
+        "rank": 63,
+        "fifaPoints": 1391.45,
+        "elo": 1772.4
+      }
+    },
+    "Group L": {
+      "GHA": {
+        "name": "Ghana",
+        "rank": 74,
+        "fifaPoints": 1346.31,
+        "elo": 1620.6
+      },
+      "PAN": {
+        "name": "Panama",
+        "rank": 33,
+        "fifaPoints": 1540.64,
+        "elo": 1846.4
+      },
+      "ENG": {
+        "name": "England",
+        "rank": 4,
+        "fifaPoints": 1825.97,
+        "elo": 2055
+      },
+      "CRO": {
+        "name": "Croatia",
+        "rank": 11,
+        "fifaPoints": 1717.07,
+        "elo": 1966.8
+      }
+    },
+    "Group K": {
+      "POR": {
+        "name": "Portugal",
+        "rank": 5,
+        "fifaPoints": 1763.83,
+        "elo": 2033.4
+      },
+      "COD": {
+        "name": "Congo DR",
+        "rank": 46,
+        "fifaPoints": 1478.35,
+        "elo": 1743.2
+      },
+      "UZB": {
+        "name": "Uzbekistan",
+        "rank": 50,
+        "fifaPoints": 1465.34,
+        "elo": 1817.5
+      },
+      "COL": {
+        "name": "Colombia",
+        "rank": 13,
+        "fifaPoints": 1693.09,
+        "elo": 2024.7
+      }
+    }
+  },
+  "matches": [
+    {
+      "number": 1,
+      "group": "Group A",
+      "date": "2026-06-11T19:00:00Z",
+      "city": "Mexico City",
+      "country": "MEX",
+      "home": {
+        "code": "MEX",
+        "name": "Mexico"
+      },
+      "away": {
+        "code": "RSA",
+        "name": "South Africa"
+      }
+    },
+    {
+      "number": 2,
+      "group": "Group A",
+      "date": "2026-06-12T02:00:00Z",
+      "city": "Guadalajara",
+      "country": "MEX",
+      "home": {
+        "code": "KOR",
+        "name": "Korea Republic"
+      },
+      "away": {
+        "code": "CZE",
+        "name": "Czechia"
+      }
+    },
+    {
+      "number": 3,
+      "group": "Group B",
+      "date": "2026-06-12T19:00:00Z",
+      "city": "Toronto",
+      "country": "CAN",
+      "home": {
+        "code": "CAN",
+        "name": "Canada"
+      },
+      "away": {
+        "code": "BIH",
+        "name": "Bosnia and Herzegovina"
+      }
+    },
+    {
+      "number": 4,
+      "group": "Group D",
+      "date": "2026-06-13T01:00:00Z",
+      "city": "Los Angeles",
+      "country": "USA",
+      "home": {
+        "code": "USA",
+        "name": "USA"
+      },
+      "away": {
+        "code": "PAR",
+        "name": "Paraguay"
+      }
+    },
+    {
+      "number": 5,
+      "group": "Group C",
+      "date": "2026-06-14T01:00:00Z",
+      "city": "Boston",
+      "country": "USA",
+      "home": {
+        "code": "HAI",
+        "name": "Haiti"
+      },
+      "away": {
+        "code": "SCO",
+        "name": "Scotland"
+      }
+    },
+    {
+      "number": 6,
+      "group": "Group D",
+      "date": "2026-06-14T04:00:00Z",
+      "city": "Vancouver",
+      "country": "CAN",
+      "home": {
+        "code": "AUS",
+        "name": "Australia"
+      },
+      "away": {
+        "code": "TUR",
+        "name": "Türkiye"
+      }
+    },
+    {
+      "number": 7,
+      "group": "Group C",
+      "date": "2026-06-13T22:00:00Z",
+      "city": "New York",
+      "country": "USA",
+      "home": {
+        "code": "BRA",
+        "name": "Brazil"
+      },
+      "away": {
+        "code": "MAR",
+        "name": "Morocco"
+      }
+    },
+    {
+      "number": 8,
+      "group": "Group B",
+      "date": "2026-06-13T19:00:00Z",
+      "city": "San Francisco Bay Area",
+      "country": "USA",
+      "home": {
+        "code": "QAT",
+        "name": "Qatar"
+      },
+      "away": {
+        "code": "SUI",
+        "name": "Switzerland"
+      }
+    },
+    {
+      "number": 9,
+      "group": "Group E",
+      "date": "2026-06-14T23:00:00Z",
+      "city": "Philadelphia",
+      "country": "USA",
+      "home": {
+        "code": "CIV",
+        "name": "Côte d'Ivoire"
+      },
+      "away": {
+        "code": "ECU",
+        "name": "Ecuador"
+      }
+    },
+    {
+      "number": 10,
+      "group": "Group E",
+      "date": "2026-06-14T17:00:00Z",
+      "city": "Houston",
+      "country": "USA",
+      "home": {
+        "code": "GER",
+        "name": "Germany"
+      },
+      "away": {
+        "code": "CUW",
+        "name": "Curaçao"
+      }
+    },
+    {
+      "number": 11,
+      "group": "Group F",
+      "date": "2026-06-14T20:00:00Z",
+      "city": "Dallas",
+      "country": "USA",
+      "home": {
+        "code": "NED",
+        "name": "Netherlands"
+      },
+      "away": {
+        "code": "JPN",
+        "name": "Japan"
+      }
+    },
+    {
+      "number": 12,
+      "group": "Group F",
+      "date": "2026-06-15T02:00:00Z",
+      "city": "Monterrey",
+      "country": "MEX",
+      "home": {
+        "code": "SWE",
+        "name": "Sweden"
+      },
+      "away": {
+        "code": "TUN",
+        "name": "Tunisia"
+      }
+    },
+    {
+      "number": 13,
+      "group": "Group H",
+      "date": "2026-06-15T22:00:00Z",
+      "city": "Miami",
+      "country": "USA",
+      "home": {
+        "code": "KSA",
+        "name": "Saudi Arabia"
+      },
+      "away": {
+        "code": "URU",
+        "name": "Uruguay"
+      }
+    },
+    {
+      "number": 14,
+      "group": "Group H",
+      "date": "2026-06-15T16:00:00Z",
+      "city": "Atlanta",
+      "country": "USA",
+      "home": {
+        "code": "ESP",
+        "name": "Spain"
+      },
+      "away": {
+        "code": "CPV",
+        "name": "Cabo Verde"
+      }
+    },
+    {
+      "number": 15,
+      "group": "Group G",
+      "date": "2026-06-16T01:00:00Z",
+      "city": "Los Angeles",
+      "country": "USA",
+      "home": {
+        "code": "IRN",
+        "name": "IR Iran"
+      },
+      "away": {
+        "code": "NZL",
+        "name": "New Zealand"
+      }
+    },
+    {
+      "number": 16,
+      "group": "Group G",
+      "date": "2026-06-15T19:00:00Z",
+      "city": "Seattle",
+      "country": "USA",
+      "home": {
+        "code": "BEL",
+        "name": "Belgium"
+      },
+      "away": {
+        "code": "EGY",
+        "name": "Egypt"
+      }
+    },
+    {
+      "number": 17,
+      "group": "Group I",
+      "date": "2026-06-16T19:00:00Z",
+      "city": "New York",
+      "country": "USA",
+      "home": {
+        "code": "FRA",
+        "name": "France"
+      },
+      "away": {
+        "code": "SEN",
+        "name": "Senegal"
+      }
+    },
+    {
+      "number": 18,
+      "group": "Group I",
+      "date": "2026-06-16T22:00:00Z",
+      "city": "Boston",
+      "country": "USA",
+      "home": {
+        "code": "IRQ",
+        "name": "Iraq"
+      },
+      "away": {
+        "code": "NOR",
+        "name": "Norway"
+      }
+    },
+    {
+      "number": 19,
+      "group": "Group J",
+      "date": "2026-06-17T01:00:00Z",
+      "city": "Kansas City",
+      "country": "USA",
+      "home": {
+        "code": "ARG",
+        "name": "Argentina"
+      },
+      "away": {
+        "code": "ALG",
+        "name": "Algeria"
+      }
+    },
+    {
+      "number": 20,
+      "group": "Group J",
+      "date": "2026-06-17T04:00:00Z",
+      "city": "San Francisco Bay Area",
+      "country": "USA",
+      "home": {
+        "code": "AUT",
+        "name": "Austria"
+      },
+      "away": {
+        "code": "JOR",
+        "name": "Jordan"
+      }
+    },
+    {
+      "number": 21,
+      "group": "Group L",
+      "date": "2026-06-17T23:00:00Z",
+      "city": "Toronto",
+      "country": "CAN",
+      "home": {
+        "code": "GHA",
+        "name": "Ghana"
+      },
+      "away": {
+        "code": "PAN",
+        "name": "Panama"
+      }
+    },
+    {
+      "number": 22,
+      "group": "Group L",
+      "date": "2026-06-17T20:00:00Z",
+      "city": "Dallas",
+      "country": "USA",
+      "home": {
+        "code": "ENG",
+        "name": "England"
+      },
+      "away": {
+        "code": "CRO",
+        "name": "Croatia"
+      }
+    },
+    {
+      "number": 23,
+      "group": "Group K",
+      "date": "2026-06-17T17:00:00Z",
+      "city": "Houston",
+      "country": "USA",
+      "home": {
+        "code": "POR",
+        "name": "Portugal"
+      },
+      "away": {
+        "code": "COD",
+        "name": "Congo DR"
+      }
+    },
+    {
+      "number": 24,
+      "group": "Group K",
+      "date": "2026-06-18T02:00:00Z",
+      "city": "Mexico City",
+      "country": "MEX",
+      "home": {
+        "code": "UZB",
+        "name": "Uzbekistan"
+      },
+      "away": {
+        "code": "COL",
+        "name": "Colombia"
+      }
+    },
+    {
+      "number": 25,
+      "group": "Group A",
+      "date": "2026-06-18T16:00:00Z",
+      "city": "Atlanta",
+      "country": "USA",
+      "home": {
+        "code": "CZE",
+        "name": "Czechia"
+      },
+      "away": {
+        "code": "RSA",
+        "name": "South Africa"
+      }
+    },
+    {
+      "number": 26,
+      "group": "Group B",
+      "date": "2026-06-18T19:00:00Z",
+      "city": "Los Angeles",
+      "country": "USA",
+      "home": {
+        "code": "SUI",
+        "name": "Switzerland"
+      },
+      "away": {
+        "code": "BIH",
+        "name": "Bosnia and Herzegovina"
+      }
+    },
+    {
+      "number": 27,
+      "group": "Group B",
+      "date": "2026-06-18T22:00:00Z",
+      "city": "Vancouver",
+      "country": "CAN",
+      "home": {
+        "code": "CAN",
+        "name": "Canada"
+      },
+      "away": {
+        "code": "QAT",
+        "name": "Qatar"
+      }
+    },
+    {
+      "number": 28,
+      "group": "Group A",
+      "date": "2026-06-19T01:00:00Z",
+      "city": "Guadalajara",
+      "country": "MEX",
+      "home": {
+        "code": "MEX",
+        "name": "Mexico"
+      },
+      "away": {
+        "code": "KOR",
+        "name": "Korea Republic"
+      }
+    },
+    {
+      "number": 29,
+      "group": "Group C",
+      "date": "2026-06-20T00:30:00Z",
+      "city": "Philadelphia",
+      "country": "USA",
+      "home": {
+        "code": "BRA",
+        "name": "Brazil"
+      },
+      "away": {
+        "code": "HAI",
+        "name": "Haiti"
+      }
+    },
+    {
+      "number": 30,
+      "group": "Group C",
+      "date": "2026-06-19T22:00:00Z",
+      "city": "Boston",
+      "country": "USA",
+      "home": {
+        "code": "SCO",
+        "name": "Scotland"
+      },
+      "away": {
+        "code": "MAR",
+        "name": "Morocco"
+      }
+    },
+    {
+      "number": 31,
+      "group": "Group D",
+      "date": "2026-06-20T03:00:00Z",
+      "city": "San Francisco Bay Area",
+      "country": "USA",
+      "home": {
+        "code": "TUR",
+        "name": "Türkiye"
+      },
+      "away": {
+        "code": "PAR",
+        "name": "Paraguay"
+      }
+    },
+    {
+      "number": 32,
+      "group": "Group D",
+      "date": "2026-06-19T19:00:00Z",
+      "city": "Seattle",
+      "country": "USA",
+      "home": {
+        "code": "USA",
+        "name": "USA"
+      },
+      "away": {
+        "code": "AUS",
+        "name": "Australia"
+      }
+    },
+    {
+      "number": 33,
+      "group": "Group E",
+      "date": "2026-06-20T20:00:00Z",
+      "city": "Toronto",
+      "country": "CAN",
+      "home": {
+        "code": "GER",
+        "name": "Germany"
+      },
+      "away": {
+        "code": "CIV",
+        "name": "Côte d'Ivoire"
+      }
+    },
+    {
+      "number": 34,
+      "group": "Group E",
+      "date": "2026-06-21T00:00:00Z",
+      "city": "Kansas City",
+      "country": "USA",
+      "home": {
+        "code": "ECU",
+        "name": "Ecuador"
+      },
+      "away": {
+        "code": "CUW",
+        "name": "Curaçao"
+      }
+    },
+    {
+      "number": 35,
+      "group": "Group F",
+      "date": "2026-06-20T17:00:00Z",
+      "city": "Houston",
+      "country": "USA",
+      "home": {
+        "code": "NED",
+        "name": "Netherlands"
+      },
+      "away": {
+        "code": "SWE",
+        "name": "Sweden"
+      }
+    },
+    {
+      "number": 36,
+      "group": "Group F",
+      "date": "2026-06-21T04:00:00Z",
+      "city": "Monterrey",
+      "country": "MEX",
+      "home": {
+        "code": "TUN",
+        "name": "Tunisia"
+      },
+      "away": {
+        "code": "JPN",
+        "name": "Japan"
+      }
+    },
+    {
+      "number": 37,
+      "group": "Group H",
+      "date": "2026-06-21T22:00:00Z",
+      "city": "Miami",
+      "country": "USA",
+      "home": {
+        "code": "URU",
+        "name": "Uruguay"
+      },
+      "away": {
+        "code": "CPV",
+        "name": "Cabo Verde"
+      }
+    },
+    {
+      "number": 38,
+      "group": "Group H",
+      "date": "2026-06-21T16:00:00Z",
+      "city": "Atlanta",
+      "country": "USA",
+      "home": {
+        "code": "ESP",
+        "name": "Spain"
+      },
+      "away": {
+        "code": "KSA",
+        "name": "Saudi Arabia"
+      }
+    },
+    {
+      "number": 39,
+      "group": "Group G",
+      "date": "2026-06-21T19:00:00Z",
+      "city": "Los Angeles",
+      "country": "USA",
+      "home": {
+        "code": "BEL",
+        "name": "Belgium"
+      },
+      "away": {
+        "code": "IRN",
+        "name": "IR Iran"
+      }
+    },
+    {
+      "number": 40,
+      "group": "Group G",
+      "date": "2026-06-22T01:00:00Z",
+      "city": "Vancouver",
+      "country": "CAN",
+      "home": {
+        "code": "NZL",
+        "name": "New Zealand"
+      },
+      "away": {
+        "code": "EGY",
+        "name": "Egypt"
+      }
+    },
+    {
+      "number": 41,
+      "group": "Group I",
+      "date": "2026-06-23T00:00:00Z",
+      "city": "New York",
+      "country": "USA",
+      "home": {
+        "code": "NOR",
+        "name": "Norway"
+      },
+      "away": {
+        "code": "SEN",
+        "name": "Senegal"
+      }
+    },
+    {
+      "number": 42,
+      "group": "Group I",
+      "date": "2026-06-22T21:00:00Z",
+      "city": "Philadelphia",
+      "country": "USA",
+      "home": {
+        "code": "FRA",
+        "name": "France"
+      },
+      "away": {
+        "code": "IRQ",
+        "name": "Iraq"
+      }
+    },
+    {
+      "number": 43,
+      "group": "Group J",
+      "date": "2026-06-22T17:00:00Z",
+      "city": "Dallas",
+      "country": "USA",
+      "home": {
+        "code": "ARG",
+        "name": "Argentina"
+      },
+      "away": {
+        "code": "AUT",
+        "name": "Austria"
+      }
+    },
+    {
+      "number": 44,
+      "group": "Group J",
+      "date": "2026-06-23T03:00:00Z",
+      "city": "San Francisco Bay Area",
+      "country": "USA",
+      "home": {
+        "code": "JOR",
+        "name": "Jordan"
+      },
+      "away": {
+        "code": "ALG",
+        "name": "Algeria"
+      }
+    },
+    {
+      "number": 45,
+      "group": "Group L",
+      "date": "2026-06-23T20:00:00Z",
+      "city": "Boston",
+      "country": "USA",
+      "home": {
+        "code": "ENG",
+        "name": "England"
+      },
+      "away": {
+        "code": "GHA",
+        "name": "Ghana"
+      }
+    },
+    {
+      "number": 46,
+      "group": "Group L",
+      "date": "2026-06-23T23:00:00Z",
+      "city": "Toronto",
+      "country": "CAN",
+      "home": {
+        "code": "PAN",
+        "name": "Panama"
+      },
+      "away": {
+        "code": "CRO",
+        "name": "Croatia"
+      }
+    },
+    {
+      "number": 47,
+      "group": "Group K",
+      "date": "2026-06-23T17:00:00Z",
+      "city": "Houston",
+      "country": "USA",
+      "home": {
+        "code": "POR",
+        "name": "Portugal"
+      },
+      "away": {
+        "code": "UZB",
+        "name": "Uzbekistan"
+      }
+    },
+    {
+      "number": 48,
+      "group": "Group K",
+      "date": "2026-06-24T02:00:00Z",
+      "city": "Guadalajara",
+      "country": "MEX",
+      "home": {
+        "code": "COL",
+        "name": "Colombia"
+      },
+      "away": {
+        "code": "COD",
+        "name": "Congo DR"
+      }
+    },
+    {
+      "number": 49,
+      "group": "Group C",
+      "date": "2026-06-24T22:00:00Z",
+      "city": "Miami",
+      "country": "USA",
+      "home": {
+        "code": "SCO",
+        "name": "Scotland"
+      },
+      "away": {
+        "code": "BRA",
+        "name": "Brazil"
+      }
+    },
+    {
+      "number": 50,
+      "group": "Group C",
+      "date": "2026-06-24T22:00:00Z",
+      "city": "Atlanta",
+      "country": "USA",
+      "home": {
+        "code": "MAR",
+        "name": "Morocco"
+      },
+      "away": {
+        "code": "HAI",
+        "name": "Haiti"
+      }
+    },
+    {
+      "number": 51,
+      "group": "Group B",
+      "date": "2026-06-24T19:00:00Z",
+      "city": "Vancouver",
+      "country": "CAN",
+      "home": {
+        "code": "SUI",
+        "name": "Switzerland"
+      },
+      "away": {
+        "code": "CAN",
+        "name": "Canada"
+      }
+    },
+    {
+      "number": 52,
+      "group": "Group B",
+      "date": "2026-06-24T19:00:00Z",
+      "city": "Seattle",
+      "country": "USA",
+      "home": {
+        "code": "BIH",
+        "name": "Bosnia and Herzegovina"
+      },
+      "away": {
+        "code": "QAT",
+        "name": "Qatar"
+      }
+    },
+    {
+      "number": 53,
+      "group": "Group A",
+      "date": "2026-06-25T01:00:00Z",
+      "city": "Mexico City",
+      "country": "MEX",
+      "home": {
+        "code": "CZE",
+        "name": "Czechia"
+      },
+      "away": {
+        "code": "MEX",
+        "name": "Mexico"
+      }
+    },
+    {
+      "number": 54,
+      "group": "Group A",
+      "date": "2026-06-25T01:00:00Z",
+      "city": "Monterrey",
+      "country": "MEX",
+      "home": {
+        "code": "RSA",
+        "name": "South Africa"
+      },
+      "away": {
+        "code": "KOR",
+        "name": "Korea Republic"
+      }
+    },
+    {
+      "number": 55,
+      "group": "Group E",
+      "date": "2026-06-25T20:00:00Z",
+      "city": "Philadelphia",
+      "country": "USA",
+      "home": {
+        "code": "CUW",
+        "name": "Curaçao"
+      },
+      "away": {
+        "code": "CIV",
+        "name": "Côte d'Ivoire"
+      }
+    },
+    {
+      "number": 56,
+      "group": "Group E",
+      "date": "2026-06-25T20:00:00Z",
+      "city": "New York",
+      "country": "USA",
+      "home": {
+        "code": "ECU",
+        "name": "Ecuador"
+      },
+      "away": {
+        "code": "GER",
+        "name": "Germany"
+      }
+    },
+    {
+      "number": 57,
+      "group": "Group F",
+      "date": "2026-06-25T23:00:00Z",
+      "city": "Dallas",
+      "country": "USA",
+      "home": {
+        "code": "JPN",
+        "name": "Japan"
+      },
+      "away": {
+        "code": "SWE",
+        "name": "Sweden"
+      }
+    },
+    {
+      "number": 58,
+      "group": "Group F",
+      "date": "2026-06-25T23:00:00Z",
+      "city": "Kansas City",
+      "country": "USA",
+      "home": {
+        "code": "TUN",
+        "name": "Tunisia"
+      },
+      "away": {
+        "code": "NED",
+        "name": "Netherlands"
+      }
+    },
+    {
+      "number": 59,
+      "group": "Group D",
+      "date": "2026-06-26T02:00:00Z",
+      "city": "Los Angeles",
+      "country": "USA",
+      "home": {
+        "code": "TUR",
+        "name": "Türkiye"
+      },
+      "away": {
+        "code": "USA",
+        "name": "USA"
+      }
+    },
+    {
+      "number": 60,
+      "group": "Group D",
+      "date": "2026-06-26T02:00:00Z",
+      "city": "San Francisco Bay Area",
+      "country": "USA",
+      "home": {
+        "code": "PAR",
+        "name": "Paraguay"
+      },
+      "away": {
+        "code": "AUS",
+        "name": "Australia"
+      }
+    },
+    {
+      "number": 61,
+      "group": "Group I",
+      "date": "2026-06-26T19:00:00Z",
+      "city": "Boston",
+      "country": "USA",
+      "home": {
+        "code": "NOR",
+        "name": "Norway"
+      },
+      "away": {
+        "code": "FRA",
+        "name": "France"
+      }
+    },
+    {
+      "number": 62,
+      "group": "Group I",
+      "date": "2026-06-26T19:00:00Z",
+      "city": "Toronto",
+      "country": "CAN",
+      "home": {
+        "code": "SEN",
+        "name": "Senegal"
+      },
+      "away": {
+        "code": "IRQ",
+        "name": "Iraq"
+      }
+    },
+    {
+      "number": 63,
+      "group": "Group G",
+      "date": "2026-06-27T03:00:00Z",
+      "city": "Seattle",
+      "country": "USA",
+      "home": {
+        "code": "EGY",
+        "name": "Egypt"
+      },
+      "away": {
+        "code": "IRN",
+        "name": "IR Iran"
+      }
+    },
+    {
+      "number": 64,
+      "group": "Group G",
+      "date": "2026-06-27T03:00:00Z",
+      "city": "Vancouver",
+      "country": "CAN",
+      "home": {
+        "code": "NZL",
+        "name": "New Zealand"
+      },
+      "away": {
+        "code": "BEL",
+        "name": "Belgium"
+      }
+    },
+    {
+      "number": 65,
+      "group": "Group H",
+      "date": "2026-06-27T00:00:00Z",
+      "city": "Houston",
+      "country": "USA",
+      "home": {
+        "code": "CPV",
+        "name": "Cabo Verde"
+      },
+      "away": {
+        "code": "KSA",
+        "name": "Saudi Arabia"
+      }
+    },
+    {
+      "number": 66,
+      "group": "Group H",
+      "date": "2026-06-27T00:00:00Z",
+      "city": "Guadalajara",
+      "country": "MEX",
+      "home": {
+        "code": "URU",
+        "name": "Uruguay"
+      },
+      "away": {
+        "code": "ESP",
+        "name": "Spain"
+      }
+    },
+    {
+      "number": 67,
+      "group": "Group L",
+      "date": "2026-06-27T21:00:00Z",
+      "city": "New York",
+      "country": "USA",
+      "home": {
+        "code": "PAN",
+        "name": "Panama"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "England"
+      }
+    },
+    {
+      "number": 68,
+      "group": "Group L",
+      "date": "2026-06-27T21:00:00Z",
+      "city": "Philadelphia",
+      "country": "USA",
+      "home": {
+        "code": "CRO",
+        "name": "Croatia"
+      },
+      "away": {
+        "code": "GHA",
+        "name": "Ghana"
+      }
+    },
+    {
+      "number": 69,
+      "group": "Group J",
+      "date": "2026-06-28T02:00:00Z",
+      "city": "Kansas City",
+      "country": "USA",
+      "home": {
+        "code": "ALG",
+        "name": "Algeria"
+      },
+      "away": {
+        "code": "AUT",
+        "name": "Austria"
+      }
+    },
+    {
+      "number": 70,
+      "group": "Group J",
+      "date": "2026-06-28T02:00:00Z",
+      "city": "Dallas",
+      "country": "USA",
+      "home": {
+        "code": "JOR",
+        "name": "Jordan"
+      },
+      "away": {
+        "code": "ARG",
+        "name": "Argentina"
+      }
+    },
+    {
+      "number": 71,
+      "group": "Group K",
+      "date": "2026-06-27T23:30:00Z",
+      "city": "Miami",
+      "country": "USA",
+      "home": {
+        "code": "COL",
+        "name": "Colombia"
+      },
+      "away": {
+        "code": "POR",
+        "name": "Portugal"
+      }
+    },
+    {
+      "number": 72,
+      "group": "Group K",
+      "date": "2026-06-27T23:30:00Z",
+      "city": "Atlanta",
+      "country": "USA",
+      "home": {
+        "code": "COD",
+        "name": "Congo DR"
+      },
+      "away": {
+        "code": "UZB",
+        "name": "Uzbekistan"
+      }
+    }
+  ],
+  "offensiveRatings": {
+    "FRA": 1.3159,
+    "ESP": 1.3681,
+    "ARG": 1.2397,
+    "ENG": 1.2719,
+    "POR": 1.3317,
+    "BRA": 1.2307,
+    "NED": 1.3095,
+    "MAR": 1.2091,
+    "BEL": 1.4099,
+    "GER": 1.3549,
+    "CRO": 1.1897,
+    "ITA": 1.1877,
+    "COL": 1.0842,
+    "SEN": 1.1503,
+    "MEX": 1.1145,
+    "USA": 0.5721,
+    "URU": 1.0867,
+    "JPN": 1.3657,
+    "SUI": 1.1917,
+    "DEN": 1.1865,
+    "IRN": 0.5721,
+    "TUR": 0.5721,
+    "ECU": 1.0362,
+    "AUT": 1.1529,
+    "KOR": 0.5721,
+    "NGA": 1.0988,
+    "AUS": 1.1895,
+    "ALG": 1.3259,
+    "EGY": 1.0698,
+    "CAN": 1.1978,
+    "NOR": 1.1912,
+    "UKR": 1.0589,
+    "PAN": 1.0299,
+    "CIV": 0.5721,
+    "POL": 1.188,
+    "RUS": 1.2128,
+    "WAL": 1.0265,
+    "SWE": 1.1144,
+    "SRB": 1.1106,
+    "PAR": 0.8947,
+    "CZE": 0.5721,
+    "HUN": 1.0346,
+    "SCO": 1.0743,
+    "TUN": 1.0681,
+    "CMR": 0.9934,
+    "COD": 0.5721,
+    "GRE": 0.9977,
+    "SVK": 1.0769,
+    "VEN": 0.9571,
+    "UZB": 1.1238,
+    "CRC": 1.0101,
+    "MLI": 1.0864,
+    "PER": 0.9505,
+    "CHI": 1.0282,
+    "QAT": 1.1302,
+    "ROU": 1.0794,
+    "IRQ": 1.0122,
+    "SVN": 0.9991,
+    "IRL": 0.9648,
+    "RSA": 1.0536,
+    "KSA": 1.051,
+    "BFA": 1.0356,
+    "JOR": 1.0825,
+    "ALB": 0.9587,
+    "BIH": 1.0276,
+    "HON": 0.9774,
+    "MKD": 1.0258,
+    "UAE": 1.1254,
+    "CPV": 0.5721,
+    "NIR": 0.9408,
+    "JAM": 1.0063,
+    "GEO": 1.0512,
+    "FIN": 0.9434,
+    "GHA": 1.0443,
+    "ISL": 1.0425,
+    "BOL": 0.9041,
+    "ISR": 1.1161,
+    "KOS": 1.0661,
+    "OMA": 1.0339,
+    "GUI": 1.0003,
+    "MNE": 0.9728,
+    "CUW": 1.0668,
+    "HAI": 1.1581,
+    "SYR": 1.0727,
+    "NZL": 1.1328,
+    "BUL": 0.9328,
+    "GAB": 0.9641,
+    "UGA": 0.8717,
+    "ANG": 0.9453,
+    "BEN": 0.9484,
+    "BHR": 1.0108,
+    "ZAM": 1,
+    "THA": 1.1542,
+    "CHN": 1.1238,
+    "PLE": 1.0708,
+    "GUA": 1.0284,
+    "BLR": 0.9219,
+    "LUX": 0.8566,
+    "VIE": 1.1549,
+    "SLV": 0.8807,
+    "MOZ": 0.9539,
+    "TRI": 1.0813,
+    "TJK": 1.0553,
+    "MAD": 0.9992,
+    "EQG": 0.9042,
+    "ARM": 0.9777,
+    "KGZ": 0.5721,
+    "LBN": 0.9392,
+    "COM": 0.9338,
+    "KAZ": 0.9096,
+    "KEN": 0.9274,
+    "LBY": 0.9368,
+    "TAN": 0.8842,
+    "NIG": 0.9281,
+    "MTN": 0.8713,
+    "GAM": 0.5721,
+    "SDN": 0.8338,
+    "PRK": 0.5721,
+    "SLE": 0.8973,
+    "NAM": 0.8915,
+    "TOG": 0.9473,
+    "IDN": 1.0604,
+    "FRO": 0.869,
+    "AZE": 0.8587,
+    "SUR": 1.141,
+    "CYP": 0.8969,
+    "MWI": 0.853,
+    "RWA": 0.9119,
+    "EST": 0.8687,
+    "ZIM": 1.0073,
+    "NCA": 1.0702,
+    "GNB": 0.9071,
+    "CGO": 0.9306,
+    "KUW": 0.9638,
+    "PHI": 1.0307,
+    "IND": 1.017,
+    "LVA": 0.8715,
+    "MAS": 1.1511,
+    "CTA": 0.9643,
+    "LBR": 0.8946,
+    "TKM": 0.9401,
+    "BDI": 1.0068,
+    "DOM": 1.1879,
+    "ETH": 0.9444,
+    "LES": 0.8234,
+    "BOT": 0.8747,
+    "SGP": 1.0157,
+    "LTU": 0.8024,
+    "YEM": 0.8356,
+    "GUY": 1.254,
+    "NCL": 1.1942,
+    "SKN": 0.5721,
+    "SOL": 1.1901,
+    "FIJ": 1.1149,
+    "HKG": 0.5721,
+    "PUR": 1.26,
+    "TAH": 1.1975,
+    "MYA": 0.9307,
+    "MDA": 0.8212,
+    "VAN": 1.14,
+    "MLT": 0.8004,
+    "ATG": 0.9161,
+    "GRN": 0.9355,
+    "CUB": 0.9701,
+    "SWZ": 0.9043,
+    "BER": 1.1126,
+    "LCA": 0.5721,
+    "PNG": 1.1301,
+    "AFG": 0.9259,
+    "SSD": 0.791,
+    "VIN": 0.5721,
+    "MDV": 0.9866,
+    "AND": 0.699,
+    "TPE": 0.5721,
+    "MSR": 0.9715,
+    "NEP": 0.8014,
+    "CAM": 0.9551,
+    "MRI": 0.8556,
+    "BRB": 0.9227,
+    "BLZ": 0.9473,
+    "BAN": 0.8413,
+    "DMA": 0.9848,
+    "CHA": 0.7785,
+    "ERI": 0.7441,
+    "LAO": 0.8789,
+    "BHU": 0.7519,
+    "MNG": 0.9161,
+    "COK": 0.8102,
+    "ARU": 1.0785,
+    "SAM": 1.0806,
+    "SRI": 0.8089,
+    "ASA": 0.8102,
+    "BRU": 0.5721,
+    "MAC": 0.8717,
+    "CAY": 0.8524,
+    "STP": 0.7986,
+    "DJI": 0.7721,
+    "SOM": 0.7122,
+    "TGA": 0.8587,
+    "TLS": 0.7697,
+    "GUM": 0.8817,
+    "PAK": 0.7441,
+    "GIB": 0.7076,
+    "SEY": 0.7491,
+    "TCA": 0.8066,
+    "LIE": 0.6889,
+    "BAH": 0.9268,
+    "VGB": 0.8731,
+    "VIR": 0.5721,
+    "AIA": 0.7211,
+    "SMR": 0.6461
+  },
+  "defensiveRatings": {
+    "FRA": 1.1345,
+    "ESP": 1.1463,
+    "ARG": 1.1696,
+    "ENG": 1.1686,
+    "POR": 1.1479,
+    "BRA": 1.1691,
+    "NED": 1.112,
+    "MAR": 1.2036,
+    "BEL": 1.1304,
+    "GER": 1.0902,
+    "CRO": 1.0969,
+    "ITA": 1.1234,
+    "COL": 1.1349,
+    "SEN": 1.1764,
+    "MEX": 1.1151,
+    "USA": 1.3059,
+    "URU": 1.1252,
+    "JPN": 1.1304,
+    "SUI": 1.0894,
+    "DEN": 1.1338,
+    "IRN": 1.3059,
+    "TUR": 1.3059,
+    "ECU": 1.0883,
+    "AUT": 1.1028,
+    "KOR": 1.3059,
+    "NGA": 1.1171,
+    "AUS": 1.1184,
+    "ALG": 1.1431,
+    "EGY": 1.1767,
+    "CAN": 1.1241,
+    "NOR": 1.0922,
+    "UKR": 1.0735,
+    "PAN": 1.037,
+    "CIV": 1.3059,
+    "POL": 1.0823,
+    "RUS": 1.1008,
+    "WAL": 1.0916,
+    "SWE": 1.085,
+    "SRB": 1.0712,
+    "PAR": 1.0381,
+    "CZE": 1.3059,
+    "HUN": 1.0567,
+    "SCO": 1.0417,
+    "TUN": 1.1558,
+    "CMR": 1.113,
+    "COD": 1.3059,
+    "GRE": 1.108,
+    "SVK": 1.0962,
+    "VEN": 1.0227,
+    "UZB": 1.145,
+    "CRC": 1.0633,
+    "MLI": 1.1512,
+    "PER": 1.0767,
+    "CHI": 1.066,
+    "QAT": 1.0772,
+    "ROU": 1.096,
+    "IRQ": 1.1118,
+    "SVN": 1.101,
+    "IRL": 1.0926,
+    "RSA": 1.1318,
+    "KSA": 1.0745,
+    "BFA": 1.1097,
+    "JOR": 1.0962,
+    "ALB": 1.0848,
+    "BIH": 1.0296,
+    "HON": 1.0382,
+    "MKD": 1.045,
+    "UAE": 1.0969,
+    "CPV": 1.3059,
+    "NIR": 1.0845,
+    "JAM": 1.0595,
+    "GEO": 1.0538,
+    "FIN": 1.0593,
+    "GHA": 1.1062,
+    "ISL": 0.9938,
+    "BOL": 0.8909,
+    "ISR": 0.9577,
+    "KOS": 1.0466,
+    "OMA": 1.1127,
+    "GUI": 1.0634,
+    "MNE": 1.0379,
+    "CUW": 1.0444,
+    "HAI": 1.0326,
+    "SYR": 1.0702,
+    "NZL": 1.0861,
+    "BUL": 0.9904,
+    "GAB": 1.0722,
+    "UGA": 1.1274,
+    "ANG": 1.1244,
+    "BEN": 1.067,
+    "BHR": 1.0999,
+    "ZAM": 1.0564,
+    "THA": 1.0653,
+    "CHN": 1.0787,
+    "PLE": 1.0865,
+    "GUA": 1.0686,
+    "BLR": 0.9952,
+    "LUX": 0.9403,
+    "VIE": 1.0953,
+    "SLV": 1.0383,
+    "MOZ": 1.0506,
+    "TRI": 0.9913,
+    "TJK": 1.0278,
+    "MAD": 1.0515,
+    "EQG": 1.0701,
+    "ARM": 0.8748,
+    "KGZ": 1.3059,
+    "LBN": 1.0823,
+    "COM": 1.0421,
+    "KAZ": 0.9763,
+    "KEN": 1.1006,
+    "LBY": 1.0759,
+    "TAN": 1.0652,
+    "NIG": 1.0012,
+    "MTN": 1.0601,
+    "GAM": 1.3059,
+    "SDN": 1.0299,
+    "PRK": 1.3059,
+    "SLE": 1.0696,
+    "NAM": 1.0841,
+    "TOG": 1.0659,
+    "IDN": 0.9849,
+    "FRO": 0.9767,
+    "AZE": 0.9617,
+    "SUR": 1.0598,
+    "CYP": 0.9166,
+    "MWI": 1.0842,
+    "RWA": 1.1175,
+    "EST": 0.988,
+    "ZIM": 1.0883,
+    "NCA": 1.0258,
+    "GNB": 1.021,
+    "CGO": 0.9826,
+    "KUW": 1.0407,
+    "PHI": 1.0043,
+    "IND": 1.0785,
+    "LVA": 0.99,
+    "MAS": 1.0232,
+    "CTA": 0.9389,
+    "LBR": 1.0108,
+    "TKM": 0.9611,
+    "BDI": 1.0577,
+    "DOM": 1.0274,
+    "ETH": 1.0072,
+    "LES": 1.0188,
+    "BOT": 1.0652,
+    "SGP": 0.9699,
+    "LTU": 0.9403,
+    "YEM": 0.992,
+    "GUY": 0.9745,
+    "NCL": 1.0596,
+    "SKN": 1.3059,
+    "SOL": 0.9789,
+    "FIJ": 1.033,
+    "HKG": 1.3059,
+    "PUR": 0.9645,
+    "TAH": 1.0474,
+    "MYA": 0.8781,
+    "MDA": 0.94,
+    "VAN": 0.9233,
+    "MLT": 0.9255,
+    "ATG": 0.8688,
+    "GRN": 0.846,
+    "CUB": 0.9548,
+    "SWZ": 1.0151,
+    "BER": 0.8634,
+    "LCA": 1.3059,
+    "PNG": 0.9584,
+    "AFG": 0.9751,
+    "SSD": 0.952,
+    "VIN": 1.3059,
+    "MDV": 0.8945,
+    "AND": 0.9017,
+    "TPE": 1.3059,
+    "MSR": 0.9062,
+    "NEP": 0.9577,
+    "CAM": 0.8743,
+    "MRI": 0.993,
+    "BRB": 0.8411,
+    "BLZ": 0.9458,
+    "BAN": 0.9703,
+    "DMA": 0.9251,
+    "CHA": 0.986,
+    "ERI": 0.8489,
+    "LAO": 0.8009,
+    "BHU": 0.5581,
+    "MNG": 0.8997,
+    "COK": 0.7591,
+    "ARU": 0.8771,
+    "SAM": 0.6701,
+    "SRI": 0.923,
+    "ASA": 0.056,
+    "BRU": 1.3059,
+    "MAC": 0.8931,
+    "CAY": 0.7944,
+    "STP": 0.7907,
+    "DJI": 0.6918,
+    "SOM": 0.8771,
+    "TGA": 0.437,
+    "TLS": 0.6015,
+    "GUM": 0.92,
+    "PAK": 0.8623,
+    "GIB": 0.6678,
+    "SEY": 0.837,
+    "TCA": 0.5673,
+    "LIE": 0.7502,
+    "BAH": 0.595,
+    "VGB": 0.76,
+    "VIR": 1.3059,
+    "AIA": 0.5544,
+    "SMR": 0.5743
+  },
+  "learnedModel": {
+    "description": "Empirical learned model: outcome probabilities learned from 2,769 historical matches (2023-Mar 2026)",
+    "accuracy": 0.546,
+    "testSize": 119,
+    "trainingMatches": 2769,
+    "eloDiffBuckets": {
+      "0": {
+        "home": 0.41935483870967744,
+        "draw": 0.3548387096774194,
+        "away": 0.22580645161290322,
+        "n": 31
+      },
+      "10": {
+        "home": 0.36666666666666664,
+        "draw": 0.3,
+        "away": 0.3333333333333333,
+        "n": 30
+      },
+      "20": {
+        "home": 0.5128205128205128,
+        "draw": 0.38461538461538464,
+        "away": 0.10256410256410256,
+        "n": 39
+      },
+      "30": {
+        "home": 0.45454545454545453,
+        "draw": 0.3181818181818182,
+        "away": 0.22727272727272727,
+        "n": 44
+      },
+      "40": {
+        "home": 0.45161290322580644,
+        "draw": 0.3225806451612903,
+        "away": 0.22580645161290322,
+        "n": 31
+      },
+      "50": {
+        "home": 0.47058823529411764,
+        "draw": 0.2549019607843137,
+        "away": 0.27450980392156865,
+        "n": 51
+      },
+      "60": {
+        "home": 0.4358974358974359,
+        "draw": 0.2564102564102564,
+        "away": 0.3076923076923077,
+        "n": 39
+      },
+      "70": {
+        "home": 0.4358974358974359,
+        "draw": 0.358974358974359,
+        "away": 0.20512820512820512,
+        "n": 39
+      },
+      "80": {
+        "home": 0.5833333333333334,
+        "draw": 0.25,
+        "away": 0.16666666666666666,
+        "n": 48
+      },
+      "90": {
+        "home": 0.6097560975609756,
+        "draw": 0.17073170731707318,
+        "away": 0.21951219512195122,
+        "n": 41
+      },
+      "100": {
+        "home": 0.6,
+        "draw": 0.26666666666666666,
+        "away": 0.13333333333333333,
+        "n": 45
+      },
+      "110": {
+        "home": 0.46875,
+        "draw": 0.34375,
+        "away": 0.1875,
+        "n": 32
+      },
+      "120": {
+        "home": 0.5681818181818182,
+        "draw": 0.25,
+        "away": 0.18181818181818182,
+        "n": 44
+      },
+      "130": {
+        "home": 0.48484848484848486,
+        "draw": 0.2727272727272727,
+        "away": 0.24242424242424243,
+        "n": 33
+      },
+      "140": {
+        "home": 0.6326530612244898,
+        "draw": 0.30612244897959184,
+        "away": 0.061224489795918366,
+        "n": 49
+      },
+      "150": {
+        "home": 0.7027027027027027,
+        "draw": 0.21621621621621623,
+        "away": 0.08108108108108109,
+        "n": 37
+      },
+      "160": {
+        "home": 0.6666666666666666,
+        "draw": 0.26666666666666666,
+        "away": 0.06666666666666667,
+        "n": 30
+      },
+      "170": {
+        "home": 0.75,
+        "draw": 0.21428571428571427,
+        "away": 0.03571428571428571,
+        "n": 28
+      },
+      "180": {
+        "home": 0.65,
+        "draw": 0.25,
+        "away": 0.1,
+        "n": 40
+      },
+      "190": {
+        "home": 0.631578947368421,
+        "draw": 0.3157894736842105,
+        "away": 0.05263157894736842,
+        "n": 38
+      },
+      "200": {
+        "home": 0.6052631578947368,
+        "draw": 0.21052631578947367,
+        "away": 0.18421052631578946,
+        "n": 38
+      },
+      "210": {
+        "home": 0.6111111111111112,
+        "draw": 0.3055555555555556,
+        "away": 0.08333333333333333,
+        "n": 36
+      },
+      "220": {
+        "home": 0.7692307692307693,
+        "draw": 0.15384615384615385,
+        "away": 0.07692307692307693,
+        "n": 26
+      },
+      "230": {
+        "home": 0.6,
+        "draw": 0.4,
+        "away": 0,
+        "n": 30
+      },
+      "240": {
+        "home": 0.7878787878787878,
+        "draw": 0.15151515151515152,
+        "away": 0.06060606060606061,
+        "n": 33
+      },
+      "250": {
+        "home": 0.7857142857142857,
+        "draw": 0.10714285714285714,
+        "away": 0.10714285714285714,
+        "n": 28
+      },
+      "260": {
+        "home": 0.7380952380952381,
+        "draw": 0.21428571428571427,
+        "away": 0.047619047619047616,
+        "n": 42
+      },
+      "270": {
+        "home": 0.7142857142857143,
+        "draw": 0.25,
+        "away": 0.03571428571428571,
+        "n": 28
+      },
+      "280": {
+        "home": 0.8235294117647058,
+        "draw": 0.17647058823529413,
+        "away": 0,
+        "n": 34
+      },
+      "290": {
+        "home": 0.5882352941176471,
+        "draw": 0.4117647058823529,
+        "away": 0,
+        "n": 17
+      },
+      "300": {
+        "home": 0.8846153846153846,
+        "draw": 0.11538461538461539,
+        "away": 0,
+        "n": 26
+      },
+      "310": {
+        "home": 0.7619047619047619,
+        "draw": 0.14285714285714285,
+        "away": 0.09523809523809523,
+        "n": 21
+      },
+      "320": {
+        "home": 0.9444444444444444,
+        "draw": 0.05555555555555555,
+        "away": 0,
+        "n": 18
+      },
+      "330": {
+        "home": 0.8571428571428571,
+        "draw": 0.10714285714285714,
+        "away": 0.03571428571428571,
+        "n": 28
+      },
+      "340": {
+        "home": 0.8125,
+        "draw": 0.125,
+        "away": 0.0625,
+        "n": 16
+      },
+      "350": {
+        "home": 0.8846153846153846,
+        "draw": 0.07692307692307693,
+        "away": 0.038461538461538464,
+        "n": 26
+      },
+      "360": {
+        "home": 0.782608695652174,
+        "draw": 0.17391304347826086,
+        "away": 0.043478260869565216,
+        "n": 23
+      },
+      "370": {
+        "home": 0.8571428571428571,
+        "draw": 0.14285714285714285,
+        "away": 0,
+        "n": 14
+      },
+      "380": {
+        "home": 0.8695652173913043,
+        "draw": 0.08695652173913043,
+        "away": 0.043478260869565216,
+        "n": 23
+      },
+      "390": {
+        "home": 0.9375,
+        "draw": 0.0625,
+        "away": 0,
+        "n": 16
+      },
+      "400": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 12
+      },
+      "410": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 17
+      },
+      "420": {
+        "home": 0.9444444444444444,
+        "draw": 0.05555555555555555,
+        "away": 0,
+        "n": 18
+      },
+      "430": {
+        "home": 0.9375,
+        "draw": 0.0625,
+        "away": 0,
+        "n": 16
+      },
+      "440": {
+        "home": 0.8823529411764706,
+        "draw": 0.058823529411764705,
+        "away": 0.058823529411764705,
+        "n": 17
+      },
+      "450": {
+        "home": 0.9333333333333333,
+        "draw": 0.06666666666666667,
+        "away": 0,
+        "n": 15
+      },
+      "460": {
+        "home": 0.8571428571428571,
+        "draw": 0,
+        "away": 0.14285714285714285,
+        "n": 7
+      },
+      "470": {
+        "home": 0.8666666666666667,
+        "draw": 0.13333333333333333,
+        "away": 0,
+        "n": 15
+      },
+      "480": {
+        "home": 0.8333333333333334,
+        "draw": 0,
+        "away": 0.16666666666666666,
+        "n": 6
+      },
+      "490": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 13
+      },
+      "500": {
+        "home": 0.9230769230769231,
+        "draw": 0.07692307692307693,
+        "away": 0,
+        "n": 13
+      },
+      "510": {
+        "home": 0.7,
+        "draw": 0.3,
+        "away": 0,
+        "n": 10
+      },
+      "520": {
+        "home": 0.75,
+        "draw": 0.25,
+        "away": 0,
+        "n": 4
+      },
+      "530": {
+        "home": 0.8333333333333334,
+        "draw": 0.16666666666666666,
+        "away": 0,
+        "n": 6
+      },
+      "540": {
+        "home": 0.9375,
+        "draw": 0.0625,
+        "away": 0,
+        "n": 16
+      },
+      "550": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 2
+      },
+      "560": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 4
+      },
+      "570": {
+        "home": 0.6666666666666666,
+        "draw": 0.3333333333333333,
+        "away": 0,
+        "n": 3
+      },
+      "580": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 3
+      },
+      "590": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 4
+      },
+      "600": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 3
+      },
+      "610": {
+        "home": 0.5,
+        "draw": 0.5,
+        "away": 0,
+        "n": 2
+      },
+      "620": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 5
+      },
+      "630": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 3
+      },
+      "640": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 3
+      },
+      "650": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 5
+      },
+      "660": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "670": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 3
+      },
+      "680": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 2
+      },
+      "690": {
+        "home": 0.75,
+        "draw": 0.25,
+        "away": 0,
+        "n": 4
+      },
+      "700": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "710": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 3
+      },
+      "720": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 2
+      },
+      "730": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "750": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 2
+      },
+      "760": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "770": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 2
+      },
+      "780": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "800": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "830": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 3
+      },
+      "850": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "880": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "900": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "910": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "920": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "970": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "1000": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "1040": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "1050": {
+        "home": 1,
+        "draw": 0,
+        "away": 0,
+        "n": 1
+      },
+      "-140": {
+        "home": 0.21212121212121213,
+        "draw": 0.3333333333333333,
+        "away": 0.45454545454545453,
+        "n": 33
+      },
+      "-370": {
+        "home": 0,
+        "draw": 0.11764705882352941,
+        "away": 0.8823529411764706,
+        "n": 17
+      },
+      "-110": {
+        "home": 0.20689655172413793,
+        "draw": 0.2413793103448276,
+        "away": 0.5517241379310345,
+        "n": 29
+      },
+      "-50": {
+        "home": 0.3953488372093023,
+        "draw": 0.23255813953488372,
+        "away": 0.37209302325581395,
+        "n": 43
+      },
+      "-10": {
+        "home": 0.21428571428571427,
+        "draw": 0.32142857142857145,
+        "away": 0.4642857142857143,
+        "n": 28
+      },
+      "-70": {
+        "home": 0.34146341463414637,
+        "draw": 0.2682926829268293,
+        "away": 0.3902439024390244,
+        "n": 41
+      },
+      "-200": {
+        "home": 0.1935483870967742,
+        "draw": 0.3225806451612903,
+        "away": 0.4838709677419355,
+        "n": 31
+      },
+      "-190": {
+        "home": 0.09523809523809523,
+        "draw": 0.42857142857142855,
+        "away": 0.47619047619047616,
+        "n": 21
+      },
+      "-300": {
+        "home": 0.2,
+        "draw": 0.15,
+        "away": 0.65,
+        "n": 20
+      },
+      "-60": {
+        "home": 0.5428571428571428,
+        "draw": 0.2,
+        "away": 0.2571428571428571,
+        "n": 35
+      },
+      "-80": {
+        "home": 0.3191489361702128,
+        "draw": 0.40425531914893614,
+        "away": 0.2765957446808511,
+        "n": 47
+      },
+      "-690": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 2
+      },
+      "-240": {
+        "home": 0,
+        "draw": 0.24,
+        "away": 0.76,
+        "n": 25
+      },
+      "-350": {
+        "home": 0.041666666666666664,
+        "draw": 0.2916666666666667,
+        "away": 0.6666666666666666,
+        "n": 24
+      },
+      "-280": {
+        "home": 0.2727272727272727,
+        "draw": 0.22727272727272727,
+        "away": 0.5,
+        "n": 22
+      },
+      "-100": {
+        "home": 0.22916666666666666,
+        "draw": 0.2708333333333333,
+        "away": 0.5,
+        "n": 48
+      },
+      "-170": {
+        "home": 0.05263157894736842,
+        "draw": 0.5263157894736842,
+        "away": 0.42105263157894735,
+        "n": 19
+      },
+      "-120": {
+        "home": 0.21951219512195122,
+        "draw": 0.34146341463414637,
+        "away": 0.43902439024390244,
+        "n": 41
+      },
+      "-130": {
+        "home": 0.15151515151515152,
+        "draw": 0.36363636363636365,
+        "away": 0.48484848484848486,
+        "n": 33
+      },
+      "-520": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 4
+      },
+      "-590": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 3
+      },
+      "-30": {
+        "home": 0.35714285714285715,
+        "draw": 0.35714285714285715,
+        "away": 0.2857142857142857,
+        "n": 42
+      },
+      "-90": {
+        "home": 0.3611111111111111,
+        "draw": 0.2777777777777778,
+        "away": 0.3611111111111111,
+        "n": 36
+      },
+      "-510": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 5
+      },
+      "-360": {
+        "home": 0.2,
+        "draw": 0.26666666666666666,
+        "away": 0.5333333333333333,
+        "n": 15
+      },
+      "-540": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 8
+      },
+      "-270": {
+        "home": 0,
+        "draw": 0.23076923076923078,
+        "away": 0.7692307692307693,
+        "n": 26
+      },
+      "-180": {
+        "home": 0.2,
+        "draw": 0.16666666666666666,
+        "away": 0.6333333333333333,
+        "n": 30
+      },
+      "-450": {
+        "home": 0.07142857142857142,
+        "draw": 0.14285714285714285,
+        "away": 0.7857142857142857,
+        "n": 14
+      },
+      "-580": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 3
+      },
+      "-410": {
+        "home": 0.2857142857142857,
+        "draw": 0.42857142857142855,
+        "away": 0.2857142857142857,
+        "n": 7
+      },
+      "-620": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 4
+      },
+      "-600": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 3
+      },
+      "-460": {
+        "home": 0,
+        "draw": 0.2,
+        "away": 0.8,
+        "n": 5
+      },
+      "-340": {
+        "home": 0,
+        "draw": 0.1,
+        "away": 0.9,
+        "n": 10
+      },
+      "-380": {
+        "home": 0.06666666666666667,
+        "draw": 0.2,
+        "away": 0.7333333333333333,
+        "n": 15
+      },
+      "-440": {
+        "home": 0.07692307692307693,
+        "draw": 0.15384615384615385,
+        "away": 0.7692307692307693,
+        "n": 13
+      },
+      "-320": {
+        "home": 0,
+        "draw": 0.14285714285714285,
+        "away": 0.8571428571428571,
+        "n": 14
+      },
+      "-40": {
+        "home": 0.2647058823529412,
+        "draw": 0.2647058823529412,
+        "away": 0.47058823529411764,
+        "n": 34
+      },
+      "-290": {
+        "home": 0.125,
+        "draw": 0.4375,
+        "away": 0.4375,
+        "n": 16
+      },
+      "-210": {
+        "home": 0.14285714285714285,
+        "draw": 0.2857142857142857,
+        "away": 0.5714285714285714,
+        "n": 28
+      },
+      "-230": {
+        "home": 0.2857142857142857,
+        "draw": 0.42857142857142855,
+        "away": 0.2857142857142857,
+        "n": 21
+      },
+      "-250": {
+        "home": 0.10526315789473684,
+        "draw": 0.47368421052631576,
+        "away": 0.42105263157894735,
+        "n": 19
+      },
+      "-430": {
+        "home": 0,
+        "draw": 0.25,
+        "away": 0.75,
+        "n": 12
+      },
+      "-160": {
+        "home": 0.2916666666666667,
+        "draw": 0.4166666666666667,
+        "away": 0.2916666666666667,
+        "n": 24
+      },
+      "-1000": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-720": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 2
+      },
+      "-560": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 4
+      },
+      "-780": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-330": {
+        "home": 0.14285714285714285,
+        "draw": 0.2857142857142857,
+        "away": 0.5714285714285714,
+        "n": 14
+      },
+      "-220": {
+        "home": 0,
+        "draw": 0.4375,
+        "away": 0.5625,
+        "n": 16
+      },
+      "-260": {
+        "home": 0.10344827586206896,
+        "draw": 0.20689655172413793,
+        "away": 0.6896551724137931,
+        "n": 29
+      },
+      "-310": {
+        "home": 0.06666666666666667,
+        "draw": 0.3333333333333333,
+        "away": 0.6,
+        "n": 15
+      },
+      "-150": {
+        "home": 0.2608695652173913,
+        "draw": 0.2608695652173913,
+        "away": 0.4782608695652174,
+        "n": 23
+      },
+      "-670": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 4
+      },
+      "-500": {
+        "home": 0,
+        "draw": 0.1111111111111111,
+        "away": 0.8888888888888888,
+        "n": 9
+      },
+      "-420": {
+        "home": 0,
+        "draw": 0.23529411764705882,
+        "away": 0.7647058823529411,
+        "n": 17
+      },
+      "-710": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 3
+      },
+      "-20": {
+        "home": 0.3125,
+        "draw": 0.34375,
+        "away": 0.34375,
+        "n": 32
+      },
+      "-390": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 10
+      },
+      "-490": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 7
+      },
+      "-800": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-610": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 3
+      },
+      "-650": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 5
+      },
+      "-400": {
+        "home": 0,
+        "draw": 0.3333333333333333,
+        "away": 0.6666666666666666,
+        "n": 9
+      },
+      "-480": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 6
+      },
+      "-970": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-830": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 2
+      },
+      "-1040": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-630": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 2
+      },
+      "-880": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-530": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 3
+      },
+      "-550": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 3
+      },
+      "-730": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-700": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 3
+      },
+      "-770": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 2
+      },
+      "-640": {
+        "home": 0,
+        "draw": 0.25,
+        "away": 0.75,
+        "n": 4
+      },
+      "-750": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 2
+      },
+      "-470": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 3
+      },
+      "-850": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-910": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-790": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-810": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-920": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-570": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 2
+      },
+      "-900": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-680": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      },
+      "-760": {
+        "home": 0,
+        "draw": 0,
+        "away": 1,
+        "n": 1
+      }
+    }
+  }
+}

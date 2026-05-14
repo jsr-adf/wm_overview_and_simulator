@@ -1,0 +1,375 @@
+{
+  "provider": "None (Testing fallback mode)",
+  "createdAt": "2026-05-11T13:59:06.477636+00:00",
+  "bookmakers": [],
+  "requestStrategy": "Testing: no market data available",
+  "eventPoolSize": 0,
+  "coverage": {
+    "matchesTotal": 72,
+    "eventsLinked": 0,
+    "oddsAvailable": 0,
+    "missingMatchNumbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72
+    ]
+  },
+  "matches": [
+    {
+      "matchNumber": 1,
+      "home": "Mexico",
+      "away": "South Africa",
+      "date": "2026-06-11T19:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 2,
+      "home": "Korea Republic",
+      "away": "Czechia",
+      "date": "2026-06-12T02:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 3,
+      "home": "Canada",
+      "away": "Bosnia and Herzegovina",
+      "date": "2026-06-12T19:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 7,
+      "home": "Brazil",
+      "away": "Morocco",
+      "date": "2026-06-13T22:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 9,
+      "home": "Ivory Coast",
+      "away": "Ecuador",
+      "date": "2026-06-14T18:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 11,
+      "home": "Netherlands",
+      "away": "Japan",
+      "date": "2026-06-14T20:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 12,
+      "home": "Sweden",
+      "away": "Tunisia",
+      "date": "2026-06-15T02:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 13,
+      "home": "Saudi Arabia",
+      "away": "Uruguay",
+      "date": "2026-06-15T22:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 14,
+      "home": "Spain",
+      "away": "Cape Verde",
+      "date": "2026-06-15T16:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 16,
+      "home": "Belgium",
+      "away": "Egypt",
+      "date": "2026-06-15T19:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 17,
+      "home": "France",
+      "away": "Senegal",
+      "date": "2026-06-16T19:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 18,
+      "home": "Iraq",
+      "away": "Norway",
+      "date": "2026-06-16T22:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 19,
+      "home": "Argentina",
+      "away": "Algeria",
+      "date": "2026-06-17T01:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 20,
+      "home": "Austria",
+      "away": "Jordan",
+      "date": "2026-06-17T04:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 21,
+      "home": "Ghana",
+      "away": "Panama",
+      "date": "2026-06-17T23:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 22,
+      "home": "England",
+      "away": "Croatia",
+      "date": "2026-06-17T20:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 24,
+      "home": "Uzbekistan",
+      "away": "Colombia",
+      "date": "2026-06-18T02:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 25,
+      "home": "Czechia",
+      "away": "South Africa",
+      "date": "2026-06-18T16:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 26,
+      "home": "Switzerland",
+      "away": "Bosnia and Herzegovina",
+      "date": "2026-06-18T19:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 27,
+      "home": "Canada",
+      "away": "Qatar",
+      "date": "2026-06-18T22:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 28,
+      "home": "Mexico",
+      "away": "Korea Republic",
+      "date": "2026-06-19T01:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 29,
+      "home": "Brazil",
+      "away": "Haiti",
+      "date": "2026-06-20T00:30:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 30,
+      "home": "Scotland",
+      "away": "Morocco",
+      "date": "2026-06-19T22:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 32,
+      "home": "USA",
+      "away": "Australia",
+      "date": "2026-06-19T19:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 33,
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "date": "2026-06-20T20:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 35,
+      "home": "Netherlands",
+      "away": "Sweden",
+      "date": "2026-06-20T17:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 36,
+      "home": "Tunisia",
+      "away": "Japan",
+      "date": "2026-06-21T04:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 37,
+      "home": "Uruguay",
+      "away": "Cape Verde",
+      "date": "2026-06-21T22:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 38,
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "date": "2026-06-21T16:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 39,
+      "home": "Belgium",
+      "away": "IR Iran",
+      "date": "2026-06-21T19:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 40,
+      "home": "New Zealand",
+      "away": "Egypt",
+      "date": "2026-06-22T01:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 41,
+      "home": "Norway",
+      "away": "Senegal",
+      "date": "2026-06-23T00:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 42,
+      "home": "France",
+      "away": "Iraq",
+      "date": "2026-06-22T21:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 43,
+      "home": "Argentina",
+      "away": "Austria",
+      "date": "2026-06-22T17:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 44,
+      "home": "Jordan",
+      "away": "Algeria",
+      "date": "2026-06-23T03:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 45,
+      "home": "England",
+      "away": "Ghana",
+      "date": "2026-06-23T20:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 46,
+      "home": "Panama",
+      "away": "Croatia",
+      "date": "2026-06-23T23:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 47,
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "date": "2026-06-23T17:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 48,
+      "home": "Colombia",
+      "away": "Congo DR",
+      "date": "2026-06-24T02:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 49,
+      "home": "Scotland",
+      "away": "Brazil",
+      "date": "2026-06-24T22:00:00Z",
+      "market1x2": null
+    },
+    {
+      "matchNumber": 71,
+      "home": "Colombia",
+      "away": "Portugal",
+      "date": "2026-06-27T23:30:00Z",
+      "market1x2": null
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WM 2026 Simulation</title>
+    <link rel="icon" href="./icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#1a6fc4" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="WM 2026" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./simulation.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">FIFA World Cup 2026</p>
+          <h1>Simulation</h1>
+          <nav class="top-nav" aria-label="Seitennavigation">
+            <a href="./index.html">Übersicht</a>
+            <a class="active" href="./simulation.html">Simulation</a>
+          </nav>
+        </div>
+        <div style="display: flex; align-items: center; gap: 20px;">
+          <div class="metric-row" aria-live="polite">
+          <div class="metric">
+            <span id="simRuns">5.000</span>
+            <label>Simulationen</label>
+          </div>
+          <div class="metric">
+            <span id="simMatches">72</span>
+            <label>Vorrundenspiele</label>
+          </div>
+          <div class="metric">
+            <span id="simGoals">-</span>
+            <label>historische Tore/Spiel</label>
+          </div>
+          </div>
+          <div id="viewDropdown" class="view-dropdown-header">
+            <button class="active" type="button" data-view="matchday">Matchday Vorhersagen</button>
+            <button type="button" data-view="vorrunden">Übersicht</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="sim-controls" aria-label="Simulationsparameter">
+        <div class="control-card">
+          <div class="filter-head">
+            <span>Datum & Zeit</span>
+          </div>
+          <div class="quick-buttons">
+            <button type="button" data-quick="today" class="quick-btn">Heute</button>
+            <button type="button" data-quick="tomorrow" class="quick-btn">Morgen</button>
+            <button type="button" data-quick="all" class="quick-btn active">Alle</button>
+          </div>
+          <div class="date-pair">
+            <label for="simDateFrom">
+              <span>Von</span>
+              <input id="simDateFrom" type="date" />
+            </label>
+            <label for="simDateTo">
+              <span>Bis</span>
+              <input id="simDateTo" type="date" />
+            </label>
+          </div>
+        </div>
+
+        <div class="control-card">
+          <div class="filter-head">
+            <span>Ranking model</span>
+            <span class="info" tabindex="0">?
+              <span class="tooltip">FIFA nutzt offizielle FIFA-Punkte. Form Score ist ein lokal aus historischen Länderspielresultaten berechneter Elo-artiger Score, kein offizielles World-Football-Elo. Blend kombiniert FIFA, Form Score und echte Marktdaten, sobald diese verfügbar sind.</span>
+            </span>
+          </div>
+          <div class="segmented" id="modelControl">
+            <button class="active" type="button" data-model="blend">Blend</button>
+            <button type="button" data-model="fifa">FIFA</button>
+            <button type="button" data-model="elo">Form</button>
+            <button type="button" data-model="market" disabled>Market</button>
+          </div>
+        </div>
+
+        <div class="control-card">
+          <div class="filter-head">
+            <span>Randomness</span>
+            <span class="info" tabindex="0">?
+              <span class="tooltip">Low macht Favoritensiege wahrscheinlicher. High lässt mehr Upsets zu. Draw- und Torlevel bleiben historisch kalibriert.</span>
+            </span>
+          </div>
+          <div class="segmented" id="randomnessControl">
+            <button type="button" data-randomness="low">Low</button>
+            <button class="active" type="button" data-randomness="normal">Normal</button>
+            <button type="button" data-randomness="high">High</button>
+          </div>
+        </div>
+
+        <div class="method-card">
+          <strong>Methodik</strong>
+          <p id="methodText">Host teams receive a small home advantage. Draw rates and goal levels are calibrated from historical international results. Each scenario runs 5,000 simulations.</p>
+        </div>
+      </section>
+
+      <section class="sim-grid" id="vorrunderSection" style="display: none;">
+        <section class="result-panel span-2">
+          <div class="panel-head">
+            <h2>Gruppensieger-Wahrscheinlichkeit</h2>
+            <p id="winnerStatus"></p>
+          </div>
+          <div id="winnerBars" class="winner-grid"></div>
+        </section>
+
+        <section class="result-panel comparison-panel team-panel">
+          <div class="panel-head">
+            <h2>Weiterkommen nach Team</h2>
+            <p>Top 2 + beste Dritte</p>
+          </div>
+          <div class="team-probability">
+            <label for="teamProbabilityPicker">Team auswählen</label>
+            <select id="teamProbabilityPicker"></select>
+            <div id="teamKitDisplay" class="kit-display" aria-label="Schematische Heim- und Auswärtstrikots"></div>
+            <div id="teamProbabilityResult" class="probability-card"></div>
+          </div>
+        </section>
+
+        <section class="result-panel comparison-panel matrix-panel">
+          <div class="panel-head">
+            <h2>Qualifikationsmatrix</h2>
+            <p>Top 2 + beste Dritte</p>
+          </div>
+          <div class="matrix-wrap">
+            <table class="matrix-table">
+              <thead>
+                <tr>
+                  <th>Team</th>
+                  <th>Gruppe</th>
+                  <th>1.</th>
+                  <th>Top 2</th>
+                  <th>Weiter</th>
+                </tr>
+              </thead>
+              <tbody id="matrixBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="result-panel span-2">
+          <div class="panel-head">
+            <h2>Expected Group Tables</h2>
+            <p>Durchschnitt über alle Simulationen</p>
+          </div>
+          <div id="groupTables" class="group-table-grid"></div>
+        </section>
+      </section>
+
+      <section class="matchday-predictions" id="matchdaySection">
+        <div class="panel-head">
+          <h2>Matchday Vorhersagen</h2>
+          <p id="matchPredictionStatus"></p>
+        </div>
+        <div class="predictions-table-wrap">
+          <table class="predictions-table">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Zeit</th>
+                <th>Gruppe</th>
+                <th>Teams</th>
+                <th>1</th>
+                <th>X</th>
+                <th>2</th>
+                <th>Ergebnis</th>
+                <th>Favorit</th>
+              </tr>
+            </thead>
+            <tbody id="predictionsBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./simulation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WM 2026 Smart Spielplan Karte</title>
+    <link rel="icon" href="./icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#1a6fc4" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="WM 2026" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">FIFA World Cup 2026</p>
+          <h1>Smart Spielplan</h1>
+          <nav class="top-nav" aria-label="Seitennavigation">
+            <a class="active" href="./index.html">Übersicht</a>
+            <a href="./simulation.html">Simulation</a>
+          </nav>
+        </div>
+        <div class="metric-row" aria-live="polite">
+          <div class="metric">
+            <span id="metricMatches">0</span>
+            <label>Spiele</label>
+          </div>
+          <div class="metric">
+            <span id="metricCities">0</span>
+            <label>Orte</label>
+          </div>
+          <div class="metric">
+            <span id="metricLate">0</span>
+            <label>nach Mitternacht</label>
+          </div>
+        </div>
+      </header>
+
+      <section class="filters" aria-label="Filter">
+        <div class="filter-block datetime-filter">
+          <div class="filter-head">
+            <span>Zeitraum</span>
+            <strong id="dateRangeLabel">—</strong>
+          </div>
+
+          <div class="quick-buttons">
+            <button type="button" data-quick="today" class="quick-btn">Heute</button>
+            <button type="button" data-quick="tomorrow" class="quick-btn">Morgen</button>
+            <button type="button" data-quick="all" class="quick-btn active">Alle</button>
+          </div>
+
+          <div class="date-pair">
+            <label for="dateFrom">
+              <span>Datum</span>
+              <input id="dateFrom" type="date" />
+            </label>
+            <label for="dateTo">
+              <span>Bis</span>
+              <input id="dateTo" type="date" />
+            </label>
+          </div>
+        </div>
+
+        <div class="filter-block">
+          <div class="filter-head">
+            <span>Gruppe</span>
+            <button id="resetGroups" type="button">Alle</button>
+          </div>
+          <div id="groupFilters" class="chips"></div>
+        </div>
+
+        <div class="filter-block team-filter">
+          <div class="filter-head">
+            <span>Team</span>
+            <button id="resetTeam" type="button">Alle</button>
+          </div>
+          <select id="teamFilter" aria-label="Teamfilter">
+            <option value="">Alle Teams</option>
+          </select>
+        </div>
+
+        <div class="filter-block">
+          <div class="filter-head">
+            <span>Zeitfenster</span>
+            <button id="resetTimeWindows" type="button">Alle</button>
+          </div>
+          <div id="timeWindowFilters" class="chips"></div>
+          <div class="range-pair">
+            <div class="range-row">
+              <span>Von</span>
+              <div class="range-with-bubble">
+                <span id="timeFromDisplay" class="range-bubble">00:00</span>
+                <input id="timeFrom" type="range" min="0" max="1439" step="30" value="0" />
+              </div>
+            </div>
+            <div class="range-row">
+              <span>Bis</span>
+              <div class="range-with-bubble">
+                <span id="timeToDisplay" class="range-bubble">23:59</span>
+                <input id="timeTo" type="range" min="0" max="1439" step="30" value="1439" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-block">
+          <div class="filter-head">
+            <span>Kartenfilter</span>
+            <button id="resetMap" type="button">Karte zurücksetzen</button>
+          </div>
+          <p id="mapFilterText" class="filter-note">Alle Austragungsorte im sichtbaren Kartenausschnitt.</p>
+        </div>
+      </section>
+
+      <section class="workspace-grid">
+        <section class="map-panel" aria-label="Karte der Austragungsorte">
+          <div id="map"></div>
+        </section>
+
+        <section class="games-panel" aria-label="Gefilterte Spiele">
+          <div class="table-head">
+            <h2>Spiele im aktuellen Filter</h2>
+            <p id="tableStatus"></p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Datum</th>
+                  <th class="sortable-header" data-sortable="kickoff">Zeit</th>
+                  <th>Zeitfenster</th>
+                  <th>Gruppe</th>
+                  <th>Teams</th>
+                  <th>Ort</th>
+                  <th>Favorit</th>
+                </tr>
+              </thead>
+              <tbody id="gamesBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,606 @@
+.sim-controls,
+.sim-grid {
+  max-width: 1500px;
+  margin: 0 auto 14px;
+}
+
+/* View dropdown in header */
+.view-dropdown-header {
+  display: flex;
+  gap: 6px;
+}
+
+.view-dropdown-header button {
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: #fffaf1;
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 8px 14px;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.view-dropdown-header button:hover {
+  background: var(--surface-soft);
+}
+
+.view-dropdown-header button.active {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: #fff;
+}
+
+.sim-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+@media (min-width: 1400px) {
+  .sim-controls {
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+  }
+}
+
+.control-card,
+.method-card,
+.result-panel {
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--surface);
+  box-shadow: 0 5px 18px rgba(48, 38, 26, 0.07);
+}
+
+.control-card,
+.method-card {
+  padding: 14px;
+}
+
+.method-card strong {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.method-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.date-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.date-pair label {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.date-pair label span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.date-pair input {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: #fffaf1;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 10px;
+}
+
+.segmented {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  min-width: 0;
+}
+
+.segmented button {
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: #fffaf1;
+  color: var(--blue);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 750;
+  padding: 7px 8px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.segmented button.active {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: #fff;
+}
+
+.segmented button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.info {
+  position: relative;
+  display: inline-grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border-radius: 0;
+  background: var(--surface-soft);
+  color: var(--blue);
+  cursor: help;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.tooltip {
+  position: absolute;
+  right: 0;
+  bottom: 28px;
+  z-index: 10;
+  display: none;
+  width: 280px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 10px;
+}
+
+.info:hover .tooltip,
+.info:focus .tooltip {
+  display: block;
+}
+
+.sim-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.span-2 {
+  grid-column: 1 / -1;
+}
+
+.comparison-panel {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 460px;
+  min-height: 0;
+}
+
+.comparison-panel > :last-child {
+  min-height: 0;
+}
+
+.team-panel .team-probability {
+  align-content: start;
+}
+
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+  padding: 14px 16px;
+}
+
+.panel-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: right;
+}
+
+.winner-grid,
+.group-table-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+  gap: 12px;
+  padding: 14px;
+}
+
+.winner-card,
+.expected-card {
+  border: 1px solid #e8decd;
+  border-radius: 0;
+  padding: 12px;
+  background: #fffaf1;
+}
+
+.winner-card h3,
+.expected-card h3 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 112px 1fr 46px;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.bar-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bar-track {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 0;
+  background: #e8decd;
+}
+
+.bar-fill {
+  height: 100%;
+  background: var(--ink);
+}
+
+.bar-value {
+  color: var(--muted);
+  text-align: right;
+}
+
+.volatility-list {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+}
+
+.volatility-item {
+  display: grid;
+  grid-template-columns: 86px 1fr 52px;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.team-probability {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+}
+
+.team-probability label {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.team-probability select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: #fffaf1;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 750;
+  padding: 10px 12px;
+}
+
+.kit-display {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.kit-card {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  align-items: center;
+  min-height: 104px;
+  border: 1px solid #e8decd;
+  background: #fffaf1;
+  padding: 10px;
+}
+
+.kit-card svg {
+  display: block;
+  width: 64px;
+  height: 76px;
+}
+
+.kit-meta {
+  min-width: 0;
+}
+
+.kit-meta strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.kit-meta span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.kit-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.probability-card {
+  border: 1px solid #e8decd;
+  border-radius: 0;
+  background: #fffaf1;
+  padding: 14px 14px 16px;
+}
+
+.probability-main {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.probability-main strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.probability-main span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  text-align: right;
+}
+
+.probability-note {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.probability-breakdown {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 12px;
+  border: 1px solid #e8decd;
+  background: #e8decd;
+}
+
+.probability-breakdown div {
+  min-width: 0;
+  background: #fffaf1;
+  padding: 9px 10px;
+}
+
+.probability-breakdown span,
+.probability-breakdown strong {
+  display: block;
+}
+
+.probability-breakdown span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.probability-breakdown strong {
+  overflow: hidden;
+  margin-top: 4px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 850;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.matrix-wrap {
+  overflow: auto;
+  min-height: 0;
+}
+
+.matrix-table td,
+.matrix-table th {
+  padding: 8px 10px;
+}
+
+.heat {
+  border-radius: 0;
+  color: var(--ink);
+  font-weight: 850;
+  text-align: right;
+}
+
+.expected-card table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.expected-card th,
+.expected-card td {
+  padding: 7px 6px;
+}
+
+.team-cell {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+@media (max-width: 1200px) {
+  .sim-controls,
+  .sim-grid,
+  .winner-grid,
+  .group-table-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .span-2 {
+    grid-column: auto;
+  }
+
+  .comparison-panel {
+    height: auto;
+  }
+
+  .kit-display {
+    grid-template-columns: 1fr;
+  }
+
+  .probability-breakdown {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .segmented {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Matchday Selector Styles */
+.round-matchday-select,
+.quick-buttons {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.round-matchday-select {
+  grid-template-columns: 1fr 1fr;
+}
+
+.select-group {
+  display: grid;
+  gap: 4px;
+}
+
+.select-group label {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select-group select {
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: #fffaf1;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 10px;
+}
+
+/* Matchday Predictions Section */
+.matchday-predictions {
+  max-width: 1500px;
+  margin: 0 auto 14px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--surface);
+  box-shadow: 0 5px 18px rgba(48, 38, 26, 0.07);
+}
+
+.matchday-predictions .panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+  padding: 14px 16px;
+}
+
+.matchday-predictions h2 {
+  margin: 0;
+}
+
+.matchday-predictions p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: right;
+}
+
+.predictions-table-wrap {
+  overflow: auto;
+  max-height: 600px;
+}
+
+.predictions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.predictions-table th,
+.predictions-table td {
+  border-bottom: 1px solid #e8decd;
+  padding: 9px 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.predictions-table th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface-soft);
+  color: #3d372f;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.predictions-table tbody tr:hover {
+  background: #fbf5eb;
+}
+
+.predictions-table .prob {
+  font-weight: 700;
+  color: var(--blue);
+  text-align: center;
+  min-width: 45px;
+}
+
+.predictions-table .favorite {
+  color: var(--green);
+  font-weight: 700;
+}

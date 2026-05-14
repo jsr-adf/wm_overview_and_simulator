@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+# Logs
+odds/odds_pull.log
+backfill.log
+*.log
+
+# Progress state (local only)
+odds/backfill_progress.json
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Excel temp files
+~$*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+

@@ -1,0 +1,10 @@
+{
+  "testSize": 119,
+  "avgPredictedGoals": 2.9747899159663866,
+  "avgActualGoals": 2.7815126050420167,
+  "correctResults": 42,
+  "accuracy": "0.3529",
+  "r2Score": "-0.9697",
+  "baselineR2": "-0.1614",
+  "model": "empirical_v4"
+}
