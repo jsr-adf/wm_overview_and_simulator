@@ -1,7 +1,7 @@
 // Load WM 2026 matches from static data file
 export async function fetchMatches() {
   try {
-    const response = await fetch('./wm-matches.json');
+    const response = await fetch('/social/wm-matches.json');
     if (!response.ok) throw new Error('Failed to load matches');
     const data = await response.json();
 
