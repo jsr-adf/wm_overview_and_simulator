@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/social/',
   build: {
-    outDir: '../social-dist',
+    outDir: 'dist',
     emptyOutDir: true,
   },
 });

@@ -1,6 +1,6 @@
 [build]
   command = "cd social && npm ci && npm run build"
-  publish = "."
+  publish = "social/dist"
 
 [build.environment]
   NODE_VERSION = "20"
@@ -16,24 +16,24 @@
 # ── Social PWA — asset pass-through (must come BEFORE the SPA catch-all) ───
 [[redirects]]
   from = "/social/assets/*"
-  to = "/social-dist/assets/:splat"
+  to = "/assets/:splat"
   status = 200
 
 # ── Social PWA — static data files ────────────────────────────────────────────
 [[redirects]]
   from = "/social/wm-matches.json"
-  to = "/social-dist/wm-matches.json"
+  to = "/wm-matches.json"
   status = 200
 
 # ── Social PWA — SPA catch-all (all routes → React index.html) ──────────────
 [[redirects]]
   from = "/social"
-  to = "/social-dist/index.html"
+  to = "/index.html"
   status = 200
 
 [[redirects]]
   from = "/social/*"
-  to = "/social-dist/index.html"
+  to = "/index.html"
   status = 200
 
 # ── Cache headers ────────────────────────────────────────────────────────────
