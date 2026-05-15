@@ -19,6 +19,12 @@
   to = "/social-dist/assets/:splat"
   status = 200
 
+# ── Social PWA — static data files ────────────────────────────────────────────
+[[redirects]]
+  from = "/social/wm-matches.json"
+  to = "/social-dist/wm-matches.json"
+  status = 200
+
 # ── Social PWA — SPA catch-all (all routes → React index.html) ──────────────
 [[redirects]]
   from = "/social"
