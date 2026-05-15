@@ -5,6 +5,7 @@ import styles from './AppShell.module.css';
 
 // Build version - update this timestamp on each deployment
 const BUILD_VERSION = '2026-05-15T13:35:00Z';
+const BUILD_NUMBER = 1; // Increment this for each build on the same date
 
 export default function AppShell() {
   const { user, signOut } = useAuth();
@@ -68,8 +69,8 @@ export default function AppShell() {
         </NavLink>
       </nav>
 
-      <div className={styles.versionInfo} title={`Build: ${BUILD_VERSION}`}>
-        v{BUILD_VERSION.split('T')[0]}
+      <div className={styles.versionInfo} title={`Build ${BUILD_NUMBER}: ${BUILD_VERSION}`}>
+        v{BUILD_VERSION.split('T')[0]}.{BUILD_NUMBER}
       </div>
     </div>
   );
