@@ -1,0 +1,60 @@
+.page {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.sub {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.features li {
+  padding: 0.85rem 1.25rem;
+  font-size: 0.9rem;
+  color: #333;
+  border-bottom: 1px solid #f0ede8;
+  text-align: left;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+.badge {
+  background: #fff3cd;
+  color: #856404;
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}

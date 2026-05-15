@@ -1,0 +1,139 @@
+.page {
+  padding: 1.5rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.avatarWrap {
+  margin-top: 0.5rem;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a6fc4, #0d3f6e);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.email {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.stat {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.statValue {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a6fc4;
+}
+
+.statLabel {
+  font-size: 0.65rem;
+  color: #888;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.cardRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #f0ede8;
+}
+
+.cardRow:last-child {
+  border-bottom: none;
+}
+
+.cardLabel {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.cardValue {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.soon {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  background: #f0f7ff;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+  color: #1a6fc4;
+  width: 100%;
+}
+
+.signOutBtn {
+  background: none;
+  border: 1.5px solid #e0ddd8;
+  color: #666;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: all 0.15s;
+}
+
+.signOutBtn:hover:not(:disabled) {
+  border-color: #c00;
+  color: #c00;
+}
+
+.signOutBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
