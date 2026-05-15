@@ -1,0 +1,302 @@
+.container {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+.filters {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.filterGroup {
+  margin-bottom: 1.25rem;
+}
+
+.filterGroup:last-child {
+  margin-bottom: 0;
+}
+
+.filterGroup h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0 0 0.75rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  background: #f5f5f5;
+  border: 1px solid #e0ddd8;
+  color: #666;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.chip:hover {
+  background: #efefef;
+  border-color: #d0ccc8;
+}
+
+.chip.active {
+  background: #1a6fc4;
+  color: #fff;
+  border-color: #1a6fc4;
+}
+
+.reset {
+  background: none;
+  border: 1px solid #e0ddd8;
+  color: #666;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.reset:hover {
+  border-color: #d0ccc8;
+  background: #f5f5f5;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.resetLink {
+  background: none;
+  border: none;
+  color: #1a6fc4;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.resetLink:hover {
+  color: #0d3f6e;
+}
+
+.matches {
+  display: grid;
+  gap: 1rem;
+}
+
+.empty {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+  font-size: 0.95rem;
+}
+
+.matchCard {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.15s;
+}
+
+.matchCard:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.matchHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #f9f9f9;
+  border-bottom: 1px solid #f0ede8;
+}
+
+.matchInfo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.date {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.time {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a6fc4;
+}
+
+.group {
+  font-size: 0.8rem;
+  background: #e3f2fd;
+  color: #1a6fc4;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.matchBody {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.flag {
+  font-size: 2rem;
+}
+
+.teamInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.teamName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.score {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1a6fc4;
+}
+
+.middleInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.timeWindow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.vs {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.matchFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #f0ede8;
+  background: #f9f9f9;
+}
+
+.venue {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.favoriteBtn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.15s;
+  padding: 0.25rem 0.5rem;
+}
+
+.favoriteBtn:hover:not(:disabled) {
+  opacity: 0.7;
+}
+
+.favoriteBtn.favorited {
+  opacity: 1;
+}
+
+.favoriteBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.75rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .matchBody {
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .flag {
+    font-size: 1.5rem;
+  }
+
+  .teamName {
+    font-size: 0.85rem;
+  }
+
+  .score {
+    font-size: 1rem;
+  }
+}

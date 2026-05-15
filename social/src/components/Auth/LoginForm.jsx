@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { useAuth } from '../../hooks/useAuth.jsx';
+import { useNavigate } from 'react-router-dom';
 import styles from './Auth.module.css';
 
 export default function LoginForm({ onSwitch }) {
   const { signIn, resetPassword } = useAuth();
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -15,15 +17,21 @@ export default function LoginForm({ onSwitch }) {
     e.preventDefault();
     setError('');
     setLoading(true);
+    console.log('[LoginForm] Submitting:', { email, mode });
     try {
       if (mode === 'reset') {
+        console.log('[LoginForm] Resetting password for:', email);
         await resetPassword(email);
         setInfo('E-Mail gesendet! Prüfe dein Postfach.');
         setMode('login');
       } else {
+        console.log('[LoginForm] Signing in with:', email);
         await signIn(email, password);
+        console.log('[LoginForm] Sign in successful! Redirecting to spielplan...');
+        navigate('/social/spielplan');
       }
     } catch (err) {
+      console.error('[LoginForm] Error:', err);
       setError(err.message || 'Fehler beim Einloggen');
     } finally {
       setLoading(false);

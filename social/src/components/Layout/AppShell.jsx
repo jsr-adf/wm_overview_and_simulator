@@ -1,9 +1,26 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import { useAuth } from '../../hooks/useAuth.jsx';
 import styles from './AppShell.module.css';
 
+// Build version - update this timestamp on each deployment
+const BUILD_VERSION = '2026-05-15T13:35:00Z';
+
 export default function AppShell() {
   const { user, signOut } = useAuth();
+  const navigate = useNavigate();
+  const [signingOut, setSigningOut] = useState(false);
+
+  const handleSignOut = async () => {
+    setSigningOut(true);
+    try {
+      await signOut();
+      navigate('/social/login');
+    } catch (error) {
+      console.error('Sign out error:', error);
+      setSigningOut(false);
+    }
+  };
 
   return (
     <div className={styles.shell}>
@@ -21,8 +38,13 @@ export default function AppShell() {
               Rangliste
             </NavLink>
           </nav>
-          <button className={styles.signOut} onClick={signOut} title="Ausloggen">
-            {user?.email?.split('@')[0]} ↪
+          <button
+            className={styles.signOut}
+            onClick={handleSignOut}
+            disabled={signingOut}
+            title="Klick zum Ausloggen"
+          >
+            {signingOut ? '…' : `Ausloggen`}
           </button>
         </div>
       </header>
@@ -45,6 +67,10 @@ export default function AppShell() {
           <span>👤</span><span>Profil</span>
         </NavLink>
       </nav>
+
+      <div className={styles.versionInfo} title={`Build: ${BUILD_VERSION}`}>
+        v{BUILD_VERSION.split('T')[0]}
+      </div>
     </div>
   );
 }

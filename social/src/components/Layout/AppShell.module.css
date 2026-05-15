@@ -114,3 +114,22 @@
 .tabActive {
   color: #1a6fc4;
 }
+
+.versionInfo {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.65rem;
+  color: #999;
+  background: rgba(255,255,255,0.8);
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 50;
+}
+
+@media (max-width: 600px) {
+  .versionInfo {
+    bottom: 5.5rem;
+  }
+}
