@@ -20,3 +20,6 @@ odds/backfill_progress.json
 __pycache__/
 *.pyc
 
+social/.env
+social-dist/
+social/node_modules/
