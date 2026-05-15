@@ -1,11 +1,36 @@
 [build]
+  command = "cd social && npm ci && npm run build"
   publish = "."
 
+[build.environment]
+  NODE_VERSION = "20"
+  VITE_SUPABASE_URL = "https://wbuipkeapzohtnlyxidv.supabase.co"
+  VITE_SUPABASE_ANON_KEY = "sb_publishable_XzEKSWN7Ar8Tf0txSZpaHA_j7rqoKLE"
+
+# ── Root redirect → static app ──────────────────────────────────────────────
 [[redirects]]
   from = "/"
   to = "/app/"
   status = 302
 
+# ── Social PWA — asset pass-through (must come BEFORE the SPA catch-all) ───
+[[redirects]]
+  from = "/social/assets/*"
+  to = "/social-dist/assets/:splat"
+  status = 200
+
+# ── Social PWA — SPA catch-all (all routes → React index.html) ──────────────
+[[redirects]]
+  from = "/social"
+  to = "/social-dist/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/social/*"
+  to = "/social-dist/index.html"
+  status = 200
+
+# ── Cache headers ────────────────────────────────────────────────────────────
 [[headers]]
   for = "/app/sw.js"
   [headers.values]
@@ -21,6 +46,11 @@
   for = "/assets/flags/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/social-dist/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
   for = "/*"
