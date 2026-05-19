@@ -1,5 +1,5 @@
 [build]
-  command = "cd social && npm ci && npm run build"
+  command = "cd social && npm ci && npm run build && cp -r ../app ../data ../assets ./dist/"
   publish = "social/dist"
 
 [build.environment]
