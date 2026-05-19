@@ -4,8 +4,8 @@ import { useAuth } from '../../hooks/useAuth.jsx';
 import styles from './AppShell.module.css';
 
 // Build version - update this timestamp on each deployment
-const BUILD_VERSION = '2026-05-15T13:35:00Z';
-const BUILD_NUMBER = 1; // Increment this for each build on the same date
+const BUILD_VERSION = '2026-05-15T16:25:00Z';
+const BUILD_NUMBER = 2; // Increment this for each build on the same date
 
 export default function AppShell() {
   const { user, signOut } = useAuth();

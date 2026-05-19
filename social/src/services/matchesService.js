@@ -10,7 +10,9 @@ export async function fetchMatches() {
       id: match.IdMatch,
       date: new Date(match.Date),
       localDate: new Date(match.LocalDate),
-      group: match.GroupName?.[0]?.Description || 'Unknown',
+      group: (match.GroupName?.[0]?.Description || '')
+        .replace(/^Group /, 'Gruppe ')
+        || (match.Home === null ? 'K.O.-Phase' : 'Unbekannt'),
       homeTeam: match.Home?.TeamName?.[0]?.Description || 'TBD',
       awayTeam: match.Away?.TeamName?.[0]?.Description || 'TBD',
       homeCountry: match.Home?.IdCountry || null,

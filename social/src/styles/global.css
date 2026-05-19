@@ -1,10 +1,91 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* ─── Design Tokens ────────────────────────────────────────────────────── */
+:root {
+  /* Primary — WM blue */
+  --color-primary:            #1553A8;
+  --color-primary-dark:       #0D3A7A;
+  --color-primary-container:  #D8E9FF;
+  --color-on-primary:         #FFFFFF;
+  --color-on-primary-cont:    #001845;
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #f5f3ef;
-  color: #1a1a1a;
-  -webkit-font-smoothing: antialiased;
+  /* Surfaces */
+  --color-bg:                 #F5F0E8;
+  --color-surface:            #FEFCF8;
+  --color-surface-low:        #F0EBE0;
+  --color-surface-variant:    #EAE4DA;
+
+  /* Content */
+  --color-on-surface:         #1E1B16;
+  --color-on-surface-var:     #4B4540;
+  --color-muted:              #7A7368;
+
+  /* Outlines */
+  --color-outline:            #7A7368;
+  --color-outline-var:        #CCC6BC;
+
+  /* Semantic */
+  --color-error:              #BA1A1A;
+  --color-error-container:    #FFDAD6;
+  --color-success:            #1B6637;
+  --color-success-container:  #CAEECE;
+
+  /* Time-window accent chips */
+  --chip-nacht:               #E8E1F5;
+  --chip-nacht-text:          #2D2540;
+  --chip-morgen:              #FEF2DA;
+  --chip-morgen-text:         #6B4800;
+  --chip-tagsüber:            #DCF2E6;
+  --chip-tagsüber-text:       #1A5233;
+  --chip-feierabend:          #FFF0DB;
+  --chip-feierabend-text:     #7A4000;
+  --chip-spätabend:           #F0E3FA;
+  --chip-spätabend-text:      #401A5C;
+
+  /* Shape */
+  --radius-sm:    8px;
+  --radius-md:    12px;
+  --radius-lg:    16px;
+  --radius-xl:    24px;
+  --radius-full:  999px;
+
+  /* Elevation (warm shadows) */
+  --elev-1: 0 1px 3px rgba(48,36,18,.06), 0 2px 10px rgba(48,36,18,.05);
+  --elev-2: 0 2px 6px rgba(48,36,18,.08), 0 6px 20px rgba(48,36,18,.07);
+  --elev-3: 0 4px 12px rgba(48,36,18,.10), 0 12px 32px rgba(48,36,18,.09);
+
+  /* Motion */
+  --transition: 0.18s cubic-bezier(.4,0,.2,1);
 }
 
-button { font-family: inherit; }
+/* ─── Reset ─────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

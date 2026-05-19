@@ -20,7 +20,13 @@ export default function Spielplan() {
         setMatches(data);
 
         // Extract unique groups and time windows
-        const uniqueGroups = [...new Set(data.map(m => getMatchGroup(m)))].sort();
+        const uniqueGroups = [...new Set(data.map(m => getMatchGroup(m)))]
+          .sort((a, b) => {
+            // Sort K.O.-Phase / Unbekannt to end
+            if (a.startsWith('K.O') || a === 'Unbekannt') return 1;
+            if (b.startsWith('K.O') || b === 'Unbekannt') return -1;
+            return a.localeCompare(b, 'de');
+          });
         const uniqueTimeWindows = [...new Set(data.map(m => getTimeWindow(m)))];
         const orderedWindows = ['Nacht', 'Morgen', 'Tagsüber', 'Feierabend', 'Spätabend'].filter(
           w => uniqueTimeWindows.includes(w)

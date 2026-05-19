@@ -1,9 +1,10 @@
+/* ─── Login Page ─────────────────────────────────────────────────────────── */
 .page {
   min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -11,12 +12,27 @@
 .bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #1a6fc4 0%, #0d3f6e 100%);
+  background:
+    radial-gradient(ellipse at 20% 120%, rgba(21,83,168,.55) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% -20%, rgba(13,58,122,.65) 0%, transparent 60%),
+    #0D3A7A;
   z-index: 0;
+}
+
+/* Subtle grid texture */
+.bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 .content {
   position: relative;
   z-index: 1;
   width: 100%;
+  max-width: 440px;
 }
