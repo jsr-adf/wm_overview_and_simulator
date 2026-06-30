@@ -1,0 +1,1606 @@
+{
+  "tips": {
+    "spieltag1": [
+      {
+        "id": "1535869625",
+        "spieltagIndex": 1,
+        "matchNumber": 3,
+        "heimName": "Kanada",
+        "gastName": "Bosnien-Herzegowina",
+        "heimCode": "CAN",
+        "gastCode": "BIH",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6219207233722437,
+          "draw": 0.23442214157913188,
+          "away": 0.14365713504862448
+        },
+        "tippedAt": "2026-06-12T10:08:10.686Z"
+      },
+      {
+        "id": "1535869628",
+        "spieltagIndex": 1,
+        "matchNumber": 4,
+        "heimName": "USA",
+        "gastName": "Paraguay",
+        "heimCode": "USA",
+        "gastCode": "PAR",
+        "tip": {
+          "h": 1,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.495078511741738,
+          "draw": 0.27634250000000005,
+          "away": 0.22851398825826197
+        },
+        "tippedAt": "2026-06-12T10:08:10.686Z"
+      },
+      {
+        "id": "1535869624",
+        "spieltagIndex": 1,
+        "matchNumber": 8,
+        "heimName": "Katar",
+        "gastName": "Schweiz",
+        "heimCode": "QAT",
+        "gastCode": "SUI",
+        "tip": {
+          "h": 0,
+          "a": 2
+        },
+        "oddsAtTip": {
+          "home": 0.09226765083370381,
+          "draw": 0.14856,
+          "away": 0.7591723491662963
+        },
+        "tippedAt": "2026-06-12T10:08:10.686Z"
+      },
+      {
+        "id": "1535869627",
+        "spieltagIndex": 1,
+        "matchNumber": 7,
+        "heimName": "Brasilien",
+        "gastName": "Marokko",
+        "heimCode": "BRA",
+        "gastCode": "MAR",
+        "tip": {
+          "h": 1,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.5750529578330258,
+          "draw": 0.26003750000000003,
+          "away": 0.1649095421669742
+        },
+        "tippedAt": "2026-06-12T10:08:10.686Z"
+      },
+      {
+        "id": "1535869626",
+        "spieltagIndex": 1,
+        "matchNumber": 5,
+        "heimName": "Haiti",
+        "gastName": "Schottland",
+        "heimCode": "HAI",
+        "gastCode": "SCO",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.22551495958075152,
+          "draw": 0.22755,
+          "away": 0.5470000404192485
+        },
+        "tippedAt": "2026-06-12T10:08:10.686Z"
+      },
+      {
+        "id": "1535869629",
+        "spieltagIndex": 1,
+        "matchNumber": 6,
+        "heimName": "Australien",
+        "gastName": "Türkei",
+        "heimCode": "AUS",
+        "gastCode": "TUR",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.4424043434353752,
+          "draw": 0.2799000000000001,
+          "away": 0.27769565656462464
+        },
+        "tippedAt": "2026-06-12T10:08:10.687Z"
+      }
+    ],
+    "spieltag2": [
+      {
+        "id": "1535869636",
+        "spieltagIndex": 2,
+        "matchNumber": 10,
+        "heimName": "Deutschland",
+        "gastName": "Curaçao",
+        "heimCode": "GER",
+        "gastCode": "CUW",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.8324351718529769,
+          "draw": 0.14894651390846494,
+          "away": 0.018618314238558118
+        },
+        "tippedAt": "2026-06-12T10:08:11.099Z"
+      },
+      {
+        "id": "1535869639",
+        "spieltagIndex": 2,
+        "matchNumber": 11,
+        "heimName": "Niederlande",
+        "gastName": "Japan",
+        "heimCode": "NED",
+        "gastCode": "JPN",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.49410647190733886,
+          "draw": 0.27401749999999997,
+          "away": 0.23187602809266117
+        },
+        "tippedAt": "2026-06-12T10:08:11.099Z"
+      },
+      {
+        "id": "1535869635",
+        "spieltagIndex": 2,
+        "matchNumber": 9,
+        "heimName": "Elfenbeinküste",
+        "gastName": "Ecuador",
+        "heimCode": "CIV",
+        "gastCode": "ECU",
+        "tip": {
+          "h": 0,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.25040476799221856,
+          "draw": 0.28774500000000003,
+          "away": 0.4618502320077814
+        },
+        "tippedAt": "2026-06-12T10:08:11.099Z"
+      },
+      {
+        "id": "1535869638",
+        "spieltagIndex": 2,
+        "matchNumber": 12,
+        "heimName": "Schweden",
+        "gastName": "Tunesien",
+        "heimCode": "SWE",
+        "gastCode": "TUN",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.5169128752499044,
+          "draw": 0.28134,
+          "away": 0.20168212475009578
+        },
+        "tippedAt": "2026-06-12T10:08:11.099Z"
+      },
+      {
+        "id": "1535869634",
+        "spieltagIndex": 2,
+        "matchNumber": 14,
+        "heimName": "Spanien",
+        "gastName": "Kap Verde",
+        "heimCode": "ESP",
+        "gastCode": "CPV",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.8576949483744045,
+          "draw": 0.10892171255608483,
+          "away": 0.033383339069510604
+        },
+        "tippedAt": "2026-06-12T10:08:11.099Z"
+      },
+      {
+        "id": "1535869632",
+        "spieltagIndex": 2,
+        "matchNumber": 16,
+        "heimName": "Belgien",
+        "gastName": "Ägypten",
+        "heimCode": "BEL",
+        "gastCode": "EGY",
+        "tip": {
+          "h": 1,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6122172710068485,
+          "draw": 0.24451,
+          "away": 0.14327272899315138
+        },
+        "tippedAt": "2026-06-12T10:08:11.099Z"
+      },
+      {
+        "id": "1535869637",
+        "spieltagIndex": 2,
+        "matchNumber": 13,
+        "heimName": "Saudi-Arabien",
+        "gastName": "Uruguay",
+        "heimCode": "KSA",
+        "gastCode": "URU",
+        "tip": {
+          "h": 0,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.14298883059825745,
+          "draw": 0.19909500000000002,
+          "away": 0.6579811694017426
+        },
+        "tippedAt": "2026-06-12T10:08:11.099Z"
+      },
+      {
+        "id": "1535869633",
+        "spieltagIndex": 2,
+        "matchNumber": 15,
+        "heimName": "Iran",
+        "gastName": "Neuseeland",
+        "heimCode": "IRN",
+        "gastCode": "NZL",
+        "tip": {
+          "h": 1,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.5672670703476108,
+          "draw": 0.2658875,
+          "away": 0.1668454296523892
+        },
+        "tippedAt": "2026-06-12T10:08:11.099Z"
+      }
+    ],
+    "spieltag3": [
+      {
+        "id": "1535869640",
+        "spieltagIndex": 3,
+        "matchNumber": 17,
+        "heimName": "Frankreich",
+        "gastName": "Senegal",
+        "heimCode": "FRA",
+        "gastCode": "SEN",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6903858290785132,
+          "draw": 0.2085575,
+          "away": 0.10105667092148687
+        },
+        "tippedAt": "2026-06-12T10:08:11.493Z"
+      },
+      {
+        "id": "1535870594",
+        "spieltagIndex": 3,
+        "matchNumber": 18,
+        "heimName": "Irak",
+        "gastName": "Norwegen",
+        "heimCode": "IRQ",
+        "gastCode": "NOR",
+        "tip": {
+          "h": 0,
+          "a": 2
+        },
+        "oddsAtTip": {
+          "home": 0.12801178350628573,
+          "draw": 0.15764,
+          "away": 0.7143482164937143
+        },
+        "tippedAt": "2026-06-12T10:08:11.493Z"
+      },
+      {
+        "id": "1535870592",
+        "spieltagIndex": 3,
+        "matchNumber": 19,
+        "heimName": "Argentinien",
+        "gastName": "Algerien",
+        "heimCode": "ARG",
+        "gastCode": "ALG",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.7454895883014937,
+          "draw": 0.18170647706533888,
+          "away": 0.07280393463316737
+        },
+        "tippedAt": "2026-06-12T10:08:11.493Z"
+      },
+      {
+        "id": "1535869641",
+        "spieltagIndex": 3,
+        "matchNumber": 20,
+        "heimName": "Österreich",
+        "gastName": "Jordanien",
+        "heimCode": "AUT",
+        "gastCode": "JOR",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6956952269560972,
+          "draw": 0.19697750000000003,
+          "away": 0.10739227304390274
+        },
+        "tippedAt": "2026-06-12T10:08:11.493Z"
+      },
+      {
+        "id": "1535870595",
+        "spieltagIndex": 3,
+        "matchNumber": 23,
+        "heimName": "Portugal",
+        "gastName": "DR Kongo",
+        "heimCode": "POR",
+        "gastCode": "COD",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.7729747969301486,
+          "draw": 0.16134851383986792,
+          "away": 0.06567668922998349
+        },
+        "tippedAt": "2026-06-12T10:08:11.493Z"
+      },
+      {
+        "id": "1535870596",
+        "spieltagIndex": 3,
+        "matchNumber": 22,
+        "heimName": "England",
+        "gastName": "Kroatien",
+        "heimCode": "ENG",
+        "gastCode": "CRO",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.5780751441367254,
+          "draw": 0.253235,
+          "away": 0.16868985586327456
+        },
+        "tippedAt": "2026-06-12T10:08:11.493Z"
+      },
+      {
+        "id": "1535870593",
+        "spieltagIndex": 3,
+        "matchNumber": 21,
+        "heimName": "Ghana",
+        "gastName": "Panama",
+        "heimCode": "GHA",
+        "gastCode": "PAN",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.3667539905055565,
+          "draw": 0.24520999999999998,
+          "away": 0.3879710094944436
+        },
+        "tippedAt": "2026-06-12T10:08:11.494Z"
+      },
+      {
+        "id": "1535870597",
+        "spieltagIndex": 3,
+        "matchNumber": 24,
+        "heimName": "Usbekistan",
+        "gastName": "Kolumbien",
+        "heimCode": "UZB",
+        "gastCode": "COL",
+        "tip": {
+          "h": 0,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.15420429412420414,
+          "draw": 0.20459,
+          "away": 0.6412707058757959
+        },
+        "tippedAt": "2026-06-12T10:08:11.494Z"
+      }
+    ],
+    "spieltag4": [
+      {
+        "id": "1535870598",
+        "spieltagIndex": 4,
+        "matchNumber": 25,
+        "heimName": "Tschechien",
+        "gastName": "Südafrika",
+        "heimCode": "CZE",
+        "gastCode": "RSA",
+        "tip": {
+          "h": 1,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6065953172899594,
+          "draw": 0.2524575,
+          "away": 0.14094718271004053
+        },
+        "tippedAt": "2026-06-12T10:08:11.876Z"
+      },
+      {
+        "id": "1535870604",
+        "spieltagIndex": 4,
+        "matchNumber": 26,
+        "heimName": "Schweiz",
+        "gastName": "Bosnien-Herzegowina",
+        "heimCode": "SUI",
+        "gastCode": "BIH",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6755372112937109,
+          "draw": 0.2118517117984439,
+          "away": 0.11261107690784528
+        },
+        "tippedAt": "2026-06-12T10:08:11.877Z"
+      },
+      {
+        "id": "1535870605",
+        "spieltagIndex": 4,
+        "matchNumber": 27,
+        "heimName": "Kanada",
+        "gastName": "Katar",
+        "heimCode": "CAN",
+        "gastCode": "QAT",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.760874330333901,
+          "draw": 0.1742855952587547,
+          "away": 0.06484007440734434
+        },
+        "tippedAt": "2026-06-12T10:08:11.877Z"
+      },
+      {
+        "id": "1535870601",
+        "spieltagIndex": 4,
+        "matchNumber": 28,
+        "heimName": "Mexiko",
+        "gastName": "Südkorea",
+        "heimCode": "MEX",
+        "gastCode": "KOR",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.584575519246308,
+          "draw": 0.26516,
+          "away": 0.15026448075369195
+        },
+        "tippedAt": "2026-06-12T10:08:11.877Z"
+      },
+      {
+        "id": "1535870603",
+        "spieltagIndex": 4,
+        "matchNumber": 32,
+        "heimName": "USA",
+        "gastName": "Australien",
+        "heimCode": "USA",
+        "gastCode": "AUS",
+        "tip": {
+          "h": 1,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.5206038325299478,
+          "draw": 0.253295,
+          "away": 0.2261011674700522
+        },
+        "tippedAt": "2026-06-12T10:08:11.877Z"
+      },
+      {
+        "id": "1535870602",
+        "spieltagIndex": 4,
+        "matchNumber": 30,
+        "heimName": "Schottland",
+        "gastName": "Marokko",
+        "heimCode": "SCO",
+        "gastCode": "MAR",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.25423177419472687,
+          "draw": 0.263795,
+          "away": 0.48197322580527324
+        },
+        "tippedAt": "2026-06-12T10:08:11.877Z"
+      },
+      {
+        "id": "1535870599",
+        "spieltagIndex": 4,
+        "matchNumber": 29,
+        "heimName": "Brasilien",
+        "gastName": "Haiti",
+        "heimCode": "BRA",
+        "gastCode": "HAI",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.8647849638817242,
+          "draw": 0.10797836543846746,
+          "away": 0.027236670679808433
+        },
+        "tippedAt": "2026-06-12T10:08:11.877Z"
+      },
+      {
+        "id": "1535870600",
+        "spieltagIndex": 4,
+        "matchNumber": 31,
+        "heimName": "Türkei",
+        "gastName": "Paraguay",
+        "heimCode": "TUR",
+        "gastCode": "PAR",
+        "tip": {
+          "h": 1,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.5636927389424029,
+          "draw": 0.27775,
+          "away": 0.1585572610575971
+        },
+        "tippedAt": "2026-06-12T10:08:11.877Z"
+      }
+    ],
+    "spieltag5": [
+      {
+        "id": "1535870610",
+        "spieltagIndex": 5,
+        "matchNumber": 35,
+        "heimName": "Niederlande",
+        "gastName": "Schweden",
+        "heimCode": "NED",
+        "gastCode": "SWE",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6538574954539998,
+          "draw": 0.21785500000000002,
+          "away": 0.12828750454600016
+        },
+        "tippedAt": "2026-06-12T10:08:12.283Z"
+      },
+      {
+        "id": "1535870613",
+        "spieltagIndex": 5,
+        "matchNumber": 33,
+        "heimName": "Deutschland",
+        "gastName": "Elfenbeinküste",
+        "heimCode": "GER",
+        "gastCode": "CIV",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6655874266918635,
+          "draw": 0.2145725,
+          "away": 0.11977507330813654
+        },
+        "tippedAt": "2026-06-12T10:08:12.284Z"
+      },
+      {
+        "id": "1535870611",
+        "spieltagIndex": 5,
+        "matchNumber": 34,
+        "heimName": "Ecuador",
+        "gastName": "Curaçao",
+        "heimCode": "ECU",
+        "gastCode": "CUW",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.8330917114910537,
+          "draw": 0.1483629231190635,
+          "away": 0.018545365389882936
+        },
+        "tippedAt": "2026-06-12T10:08:12.284Z"
+      },
+      {
+        "id": "1535870609",
+        "spieltagIndex": 5,
+        "matchNumber": 36,
+        "heimName": "Tunesien",
+        "gastName": "Japan",
+        "heimCode": "TUN",
+        "gastCode": "JPN",
+        "tip": {
+          "h": 0,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.184827175530695,
+          "draw": 0.2365525,
+          "away": 0.578620324469305
+        },
+        "tippedAt": "2026-06-12T10:08:12.284Z"
+      },
+      {
+        "id": "1535870607",
+        "spieltagIndex": 5,
+        "matchNumber": 38,
+        "heimName": "Spanien",
+        "gastName": "Saudi-Arabien",
+        "heimCode": "ESP",
+        "gastCode": "KSA",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.8482655774824879,
+          "draw": 0.11667504223778846,
+          "away": 0.035059380279723565
+        },
+        "tippedAt": "2026-06-12T10:08:12.284Z"
+      },
+      {
+        "id": "1535870612",
+        "spieltagIndex": 5,
+        "matchNumber": 39,
+        "heimName": "Belgien",
+        "gastName": "Iran",
+        "heimCode": "BEL",
+        "gastCode": "IRN",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6290631005790528,
+          "draw": 0.22925,
+          "away": 0.14168689942094723
+        },
+        "tippedAt": "2026-06-12T10:08:12.284Z"
+      },
+      {
+        "id": "1535870606",
+        "spieltagIndex": 5,
+        "matchNumber": 37,
+        "heimName": "Uruguay",
+        "gastName": "Kap Verde",
+        "heimCode": "URU",
+        "gastCode": "CPV",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.7160310150588307,
+          "draw": 0.19553465328103925,
+          "away": 0.0884343316601299
+        },
+        "tippedAt": "2026-06-12T10:08:12.284Z"
+      },
+      {
+        "id": "1535870608",
+        "spieltagIndex": 5,
+        "matchNumber": 40,
+        "heimName": "Neuseeland",
+        "gastName": "Ägypten",
+        "heimCode": "NZL",
+        "gastCode": "EGY",
+        "tip": {
+          "h": 0,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.2780809558796817,
+          "draw": 0.2721425,
+          "away": 0.4497115441203184
+        },
+        "tippedAt": "2026-06-12T10:08:12.284Z"
+      }
+    ],
+    "spieltag6": [
+      {
+        "id": "1535870615",
+        "spieltagIndex": 6,
+        "matchNumber": 43,
+        "heimName": "Argentinien",
+        "gastName": "Österreich",
+        "heimCode": "ARG",
+        "gastCode": "AUT",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6637605835340081,
+          "draw": 0.21596837019199283,
+          "away": 0.12027104627399911
+        },
+        "tippedAt": "2026-06-12T10:08:12.701Z"
+      },
+      {
+        "id": "1535870621",
+        "spieltagIndex": 6,
+        "matchNumber": 42,
+        "heimName": "Frankreich",
+        "gastName": "Irak",
+        "heimCode": "FRA",
+        "gastCode": "IRQ",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.8428713608160453,
+          "draw": 0.12038656816351534,
+          "away": 0.036742071020439415
+        },
+        "tippedAt": "2026-06-12T10:08:12.701Z"
+      },
+      {
+        "id": "1535870620",
+        "spieltagIndex": 6,
+        "matchNumber": 41,
+        "heimName": "Norwegen",
+        "gastName": "Senegal",
+        "heimCode": "NOR",
+        "gastCode": "SEN",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.4855399863601483,
+          "draw": 0.2809425,
+          "away": 0.2335175136398517
+        },
+        "tippedAt": "2026-06-12T10:08:12.702Z"
+      },
+      {
+        "id": "1535870614",
+        "spieltagIndex": 6,
+        "matchNumber": 44,
+        "heimName": "Jordanien",
+        "gastName": "Algerien",
+        "heimCode": "JOR",
+        "gastCode": "ALG",
+        "tip": {
+          "h": 0,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.23629774540116472,
+          "draw": 0.2478225,
+          "away": 0.5158797545988353
+        },
+        "tippedAt": "2026-06-12T10:08:12.702Z"
+      },
+      {
+        "id": "1535870619",
+        "spieltagIndex": 6,
+        "matchNumber": 47,
+        "heimName": "Portugal",
+        "gastName": "Usbekistan",
+        "heimCode": "POR",
+        "gastCode": "UZB",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.7620440916028561,
+          "draw": 0.16426249999999998,
+          "away": 0.07369340839714383
+        },
+        "tippedAt": "2026-06-12T10:08:12.702Z"
+      },
+      {
+        "id": "1535870616",
+        "spieltagIndex": 6,
+        "matchNumber": 45,
+        "heimName": "England",
+        "gastName": "Ghana",
+        "heimCode": "ENG",
+        "gastCode": "GHA",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.7528193120857632,
+          "draw": 0.17376116703487718,
+          "away": 0.07341952087935964
+        },
+        "tippedAt": "2026-06-12T10:08:12.702Z"
+      },
+      {
+        "id": "1535870618",
+        "spieltagIndex": 6,
+        "matchNumber": 46,
+        "heimName": "Panama",
+        "gastName": "Kroatien",
+        "heimCode": "PAN",
+        "gastCode": "CRO",
+        "tip": {
+          "h": 0,
+          "a": 2
+        },
+        "oddsAtTip": {
+          "home": 0.21553703865051582,
+          "draw": 0.24006,
+          "away": 0.5444029613494842
+        },
+        "tippedAt": "2026-06-12T10:08:12.702Z"
+      },
+      {
+        "id": "1535870617",
+        "spieltagIndex": 6,
+        "matchNumber": 48,
+        "heimName": "Kolumbien",
+        "gastName": "DR Kongo",
+        "heimCode": "COL",
+        "gastCode": "COD",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.7054172512133408,
+          "draw": 0.20026022114369715,
+          "away": 0.09438752764296214
+        },
+        "tippedAt": "2026-06-12T10:08:12.702Z"
+      }
+    ],
+    "spieltag7": [
+      {
+        "id": "1535870625",
+        "spieltagIndex": 7,
+        "matchNumber": 52,
+        "heimName": "Bosnien-Herzegowina",
+        "gastName": "Katar",
+        "heimCode": "BIH",
+        "gastCode": "QAT",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.5824653381417206,
+          "draw": 0.26034,
+          "away": 0.15719466185827938
+        },
+        "tippedAt": "2026-06-12T10:08:13.080Z"
+      },
+      {
+        "id": "1535870624",
+        "spieltagIndex": 7,
+        "matchNumber": 51,
+        "heimName": "Schweiz",
+        "gastName": "Kanada",
+        "heimCode": "SUI",
+        "gastCode": "CAN",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.4827082415588362,
+          "draw": 0.28420999999999996,
+          "away": 0.23314675844116384
+        },
+        "tippedAt": "2026-06-12T10:08:13.080Z"
+      },
+      {
+        "id": "1535870627",
+        "spieltagIndex": 7,
+        "matchNumber": 50,
+        "heimName": "Marokko",
+        "gastName": "Haiti",
+        "heimCode": "MAR",
+        "gastCode": "HAI",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.7492064198099142,
+          "draw": 0.17426504745890542,
+          "away": 0.0765285327311804
+        },
+        "tippedAt": "2026-06-12T10:08:13.080Z"
+      },
+      {
+        "id": "1535870626",
+        "spieltagIndex": 7,
+        "matchNumber": 49,
+        "heimName": "Schottland",
+        "gastName": "Brasilien",
+        "heimCode": "SCO",
+        "gastCode": "BRA",
+        "tip": {
+          "h": 0,
+          "a": 2
+        },
+        "oddsAtTip": {
+          "home": 0.16300589999262508,
+          "draw": 0.20595750000000002,
+          "away": 0.630971600007375
+        },
+        "tippedAt": "2026-06-12T10:08:13.080Z"
+      },
+      {
+        "id": "1535870623",
+        "spieltagIndex": 7,
+        "matchNumber": 54,
+        "heimName": "Südafrika",
+        "gastName": "Südkorea",
+        "heimCode": "RSA",
+        "gastCode": "KOR",
+        "tip": {
+          "h": 0,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.20867142052170748,
+          "draw": 0.24085250000000002,
+          "away": 0.5505410794782924
+        },
+        "tippedAt": "2026-06-12T10:08:13.080Z"
+      },
+      {
+        "id": "1535870622",
+        "spieltagIndex": 7,
+        "matchNumber": 53,
+        "heimName": "Tschechien",
+        "gastName": "Mexiko",
+        "heimCode": "CZE",
+        "gastCode": "MEX",
+        "tip": {
+          "h": 0,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.22454770868980606,
+          "draw": 0.24893999999999997,
+          "away": 0.526512291310194
+        },
+        "tippedAt": "2026-06-12T10:08:13.080Z"
+      }
+    ],
+    "spieltag8": [
+      {
+        "id": "1535870631",
+        "spieltagIndex": 8,
+        "matchNumber": 55,
+        "heimName": "Curaçao",
+        "gastName": "Elfenbeinküste",
+        "heimCode": "CUW",
+        "gastCode": "CIV",
+        "tip": {
+          "h": 0,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.2785745598926581,
+          "draw": 0.21735000000000004,
+          "away": 0.504075440107342
+        },
+        "tippedAt": "2026-06-12T10:08:13.466Z"
+      },
+      {
+        "id": "1535870630",
+        "spieltagIndex": 8,
+        "matchNumber": 56,
+        "heimName": "Ecuador",
+        "gastName": "Deutschland",
+        "heimCode": "ECU",
+        "gastCode": "GER",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.3032584692408473,
+          "draw": 0.2715775,
+          "away": 0.42516403075915266
+        },
+        "tippedAt": "2026-06-12T10:08:13.466Z"
+      },
+      {
+        "id": "1535870633",
+        "spieltagIndex": 8,
+        "matchNumber": 57,
+        "heimName": "Japan",
+        "gastName": "Schweden",
+        "heimCode": "JPN",
+        "gastCode": "SWE",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.5644327124853878,
+          "draw": 0.24962250000000002,
+          "away": 0.1859447875146122
+        },
+        "tippedAt": "2026-06-12T10:08:13.466Z"
+      },
+      {
+        "id": "1535870632",
+        "spieltagIndex": 8,
+        "matchNumber": 58,
+        "heimName": "Tunesien",
+        "gastName": "Niederlande",
+        "heimCode": "TUN",
+        "gastCode": "NED",
+        "tip": {
+          "h": 0,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.15832306910053867,
+          "draw": 0.20309499999999997,
+          "away": 0.6385819308994614
+        },
+        "tippedAt": "2026-06-12T10:08:13.467Z"
+      },
+      {
+        "id": "1535870629",
+        "spieltagIndex": 8,
+        "matchNumber": 60,
+        "heimName": "Paraguay",
+        "gastName": "Australien",
+        "heimCode": "PAR",
+        "gastCode": "AUS",
+        "tip": {
+          "h": 0,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.4520742414759022,
+          "draw": 0.29521749999999997,
+          "away": 0.25270825852409784
+        },
+        "tippedAt": "2026-06-12T10:08:13.467Z"
+      },
+      {
+        "id": "1535870628",
+        "spieltagIndex": 8,
+        "matchNumber": 59,
+        "heimName": "Türkei",
+        "gastName": "USA",
+        "heimCode": "TUR",
+        "gastCode": "USA",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6471947781154933,
+          "draw": 0.24730000000000005,
+          "away": 0.10550522188450664
+        },
+        "tippedAt": "2026-06-12T10:08:13.467Z"
+      }
+    ],
+    "spieltag9": [
+      {
+        "id": "1535870638",
+        "spieltagIndex": 9,
+        "matchNumber": 61,
+        "heimName": "Norwegen",
+        "gastName": "Frankreich",
+        "heimCode": "NOR",
+        "gastCode": "FRA",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.24124424569629022,
+          "draw": 0.24802499999999994,
+          "away": 0.5107307543037098
+        },
+        "tippedAt": "2026-06-12T10:08:13.845Z"
+      },
+      {
+        "id": "1535870639",
+        "spieltagIndex": 9,
+        "matchNumber": 62,
+        "heimName": "Senegal",
+        "gastName": "Irak",
+        "heimCode": "SEN",
+        "gastCode": "IRQ",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6802795468515692,
+          "draw": 0.21413750000000004,
+          "away": 0.10558295314843075
+        },
+        "tippedAt": "2026-06-12T10:08:13.845Z"
+      },
+      {
+        "id": "1535870636",
+        "spieltagIndex": 9,
+        "matchNumber": 66,
+        "heimName": "Uruguay",
+        "gastName": "Spanien",
+        "heimCode": "URU",
+        "gastCode": "ESP",
+        "tip": {
+          "h": 0,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.18799557830237523,
+          "draw": 0.21755500000000003,
+          "away": 0.5943844216976247
+        },
+        "tippedAt": "2026-06-12T10:08:13.846Z"
+      },
+      {
+        "id": "1535870637",
+        "spieltagIndex": 9,
+        "matchNumber": 65,
+        "heimName": "Kap Verde",
+        "gastName": "Saudi-Arabien",
+        "heimCode": "CPV",
+        "gastCode": "KSA",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.39753378611246903,
+          "draw": 0.27719249999999995,
+          "away": 0.32527371388753107
+        },
+        "tippedAt": "2026-06-12T10:08:13.846Z"
+      },
+      {
+        "id": "1535870634",
+        "spieltagIndex": 9,
+        "matchNumber": 64,
+        "heimName": "Neuseeland",
+        "gastName": "Belgien",
+        "heimCode": "NZL",
+        "gastCode": "BEL",
+        "tip": {
+          "h": 0,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.17401180161066795,
+          "draw": 0.18753250000000002,
+          "away": 0.638455698389332
+        },
+        "tippedAt": "2026-06-12T10:08:13.846Z"
+      },
+      {
+        "id": "1535870635",
+        "spieltagIndex": 9,
+        "matchNumber": 63,
+        "heimName": "Ägypten",
+        "gastName": "Iran",
+        "heimCode": "EGY",
+        "gastCode": "IRN",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.40897963289416955,
+          "draw": 0.2977100000000001,
+          "away": 0.29331036710583047
+        },
+        "tippedAt": "2026-06-12T10:08:13.846Z"
+      }
+    ],
+    "spieltag10": [
+      {
+        "id": "1535870645",
+        "spieltagIndex": 10,
+        "matchNumber": 68,
+        "heimName": "Kroatien",
+        "gastName": "Ghana",
+        "heimCode": "CRO",
+        "gastCode": "GHA",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6617187444060901,
+          "draw": 0.21760278275014208,
+          "away": 0.12067847284376776
+        },
+        "tippedAt": "2026-06-12T10:08:14.259Z"
+      },
+      {
+        "id": "1535870644",
+        "spieltagIndex": 10,
+        "matchNumber": 67,
+        "heimName": "Panama",
+        "gastName": "England",
+        "heimCode": "PAN",
+        "gastCode": "ENG",
+        "tip": {
+          "h": 0,
+          "a": 2
+        },
+        "oddsAtTip": {
+          "home": 0.14765664266370432,
+          "draw": 0.17633000000000001,
+          "away": 0.6760783573362956
+        },
+        "tippedAt": "2026-06-12T10:08:14.259Z"
+      },
+      {
+        "id": "1535870643",
+        "spieltagIndex": 10,
+        "matchNumber": 72,
+        "heimName": "DR Kongo",
+        "gastName": "Usbekistan",
+        "heimCode": "COD",
+        "gastCode": "UZB",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.4034010561280195,
+          "draw": 0.2763375,
+          "away": 0.32026144387198047
+        },
+        "tippedAt": "2026-06-12T10:08:14.259Z"
+      },
+      {
+        "id": "1535870642",
+        "spieltagIndex": 10,
+        "matchNumber": 71,
+        "heimName": "Kolumbien",
+        "gastName": "Portugal",
+        "heimCode": "COL",
+        "gastCode": "POR",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.34722380842282036,
+          "draw": 0.2908725,
+          "away": 0.3619686915771797
+        },
+        "tippedAt": "2026-06-12T10:08:14.259Z"
+      },
+      {
+        "id": "1535870641",
+        "spieltagIndex": 10,
+        "matchNumber": 69,
+        "heimName": "Algerien",
+        "gastName": "Österreich",
+        "heimCode": "ALG",
+        "gastCode": "AUT",
+        "tip": {
+          "h": 1,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.34184958872642973,
+          "draw": 0.29277,
+          "away": 0.3653804112735703
+        },
+        "tippedAt": "2026-06-12T10:08:14.259Z"
+      },
+      {
+        "id": "1535870640",
+        "spieltagIndex": 10,
+        "matchNumber": 70,
+        "heimName": "Jordanien",
+        "gastName": "Argentinien",
+        "heimCode": "JOR",
+        "gastCode": "ARG",
+        "tip": {
+          "h": 0,
+          "a": 2
+        },
+        "oddsAtTip": {
+          "home": 0.0805542323226359,
+          "draw": 0.149275,
+          "away": 0.7701057676773642
+        },
+        "tippedAt": "2026-06-12T10:08:14.259Z"
+      }
+    ],
+    "spieltag11": [
+      {
+        "id": "1535870652",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "Elfenbeinküste",
+        "gastName": "Norwegen",
+        "heimCode": "CIV",
+        "gastCode": "NOR",
+        "tip": {
+          "h": 0,
+          "a": 2
+        },
+        "oddsAtTip": {
+          "home": 0.27285893592538835,
+          "draw": 0.2570425,
+          "away": 0.4700335640746116
+        },
+        "tippedAt": "2026-06-30T10:36:56.753Z"
+      },
+      {
+        "id": "1535870647",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "Frankreich",
+        "gastName": "Schweden",
+        "heimCode": "FRA",
+        "gastCode": "SWE",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.7766317833842163,
+          "draw": 0.15936174810291884,
+          "away": 0.06407146851286485
+        },
+        "tippedAt": "2026-06-30T10:36:56.754Z"
+      },
+      {
+        "id": "1535870653",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "Mexiko",
+        "gastName": "Ecuador",
+        "heimCode": "MEX",
+        "gastCode": "ECU",
+        "tip": {
+          "h": 1,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.45276084138504213,
+          "draw": 0.31196750000000006,
+          "away": 0.23527165861495786
+        },
+        "tippedAt": "2026-06-30T10:36:56.754Z"
+      },
+      {
+        "id": "1535870650",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "England",
+        "gastName": "DR Kongo",
+        "heimCode": "ENG",
+        "gastCode": "COD",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.7765184378343829,
+          "draw": 0.16908972192499297,
+          "away": 0.054326840240624126
+        },
+        "tippedAt": "2026-06-30T10:36:56.754Z"
+      },
+      {
+        "id": "1535870657",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "Belgien",
+        "gastName": "Senegal",
+        "heimCode": "BEL",
+        "gastCode": "SEN",
+        "tip": {
+          "h": 1,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.4522511620535238,
+          "draw": 0.30283,
+          "away": 0.24491883794647623
+        },
+        "tippedAt": "2026-06-30T10:36:56.754Z"
+      },
+      {
+        "id": "1535870656",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "USA",
+        "gastName": "Bosnien-Herzegowina",
+        "heimCode": "USA",
+        "gastCode": "BIH",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.7206607875625801,
+          "draw": 0.19503840889105545,
+          "away": 0.08436580354636439
+        },
+        "tippedAt": "2026-06-30T10:36:56.754Z"
+      },
+      {
+        "id": "1535870659",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "Spanien",
+        "gastName": "Österreich",
+        "heimCode": "ESP",
+        "gastCode": "AUT",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.754018241557894,
+          "draw": 0.17257267417076094,
+          "away": 0.07340908427134513
+        },
+        "tippedAt": "2026-06-30T10:36:56.754Z"
+      },
+      {
+        "id": "1535870658",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "Portugal",
+        "gastName": "Kroatien",
+        "heimCode": "POR",
+        "gastCode": "CRO",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.5580358557303231,
+          "draw": 0.27235499999999996,
+          "away": 0.16960914426967688
+        },
+        "tippedAt": "2026-06-30T10:36:56.754Z"
+      },
+      {
+        "id": "1535870649",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "Schweiz",
+        "gastName": "Algerien",
+        "heimCode": "SUI",
+        "gastCode": "ALG",
+        "tip": {
+          "h": 1,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.5187527114841624,
+          "draw": 0.28391,
+          "away": 0.1973372885158377
+        },
+        "tippedAt": "2026-06-30T10:36:56.755Z"
+      },
+      {
+        "id": "1535870648",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "Australien",
+        "gastName": "Ägypten",
+        "heimCode": "AUS",
+        "gastCode": "EGY",
+        "tip": {
+          "h": 1,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.4102358068463344,
+          "draw": 0.3036425,
+          "away": 0.2861216931536656
+        },
+        "tippedAt": "2026-06-30T10:36:56.755Z"
+      },
+      {
+        "id": "1535870651",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "Argentinien",
+        "gastName": "Kap Verde",
+        "heimCode": "ARG",
+        "gastCode": "CPV",
+        "tip": {
+          "h": 3,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.8279823598368354,
+          "draw": 0.1294106801450352,
+          "away": 0.0425419600181294
+        },
+        "tippedAt": "2026-06-30T10:36:56.755Z"
+      },
+      {
+        "id": "1535870646",
+        "spieltagIndex": 11,
+        "matchNumber": null,
+        "heimName": "Kolumbien",
+        "gastName": "Ghana",
+        "heimCode": "COL",
+        "gastCode": "GHA",
+        "tip": {
+          "h": 2,
+          "a": 0
+        },
+        "oddsAtTip": {
+          "home": 0.6976610137977937,
+          "draw": 0.2114879877352945,
+          "away": 0.0908509984669118
+        },
+        "tippedAt": "2026-06-30T10:36:56.755Z"
+      }
+    ],
+    "spieltag12": [
+      {
+        "id": "1535870665",
+        "spieltagIndex": 12,
+        "matchNumber": null,
+        "heimName": "Kanada",
+        "gastName": "Marokko",
+        "heimCode": "CAN",
+        "gastCode": "MAR",
+        "tip": {
+          "h": 0,
+          "a": 1
+        },
+        "oddsAtTip": {
+          "home": 0.28647676624389884,
+          "draw": 0.264125,
+          "away": 0.4493982337561013
+        },
+        "tippedAt": "2026-06-30T10:17:39.616Z"
+      }
+    ]
+  },
+  "lastUpdated": "2026-06-30T10:36:56.771Z"
+}

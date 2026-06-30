@@ -1,0 +1,148 @@
+{
+  "fetchedAt": "2026-06-30T10:17:38.915495Z",
+  "matches": {
+    "CIV|NOR": {
+      "home": "CIV",
+      "away": "NOR",
+      "date": "2026-06-30",
+      "noVigProbability": {
+        "home": 0.2709,
+        "draw": 0.2789,
+        "away": 0.4501
+      },
+      "bookmakerCount": 3
+    },
+    "FRA|SWE": {
+      "home": "FRA",
+      "away": "SWE",
+      "date": "2026-06-30",
+      "noVigProbability": {
+        "home": 0.7479,
+        "draw": 0.1638,
+        "away": 0.0884
+      },
+      "bookmakerCount": 2
+    },
+    "MEX|ECU": {
+      "home": "MEX",
+      "away": "ECU",
+      "date": "2026-07-01",
+      "noVigProbability": {
+        "home": 0.4195,
+        "draw": 0.3305,
+        "away": 0.25
+      },
+      "bookmakerCount": 2
+    },
+    "ENG|COD": {
+      "home": "ENG",
+      "away": "COD",
+      "date": "2026-07-01",
+      "noVigProbability": {
+        "home": 0.7496,
+        "draw": 0.1771,
+        "away": 0.0732
+      },
+      "bookmakerCount": 2
+    },
+    "BEL|SEN": {
+      "home": "BEL",
+      "away": "SEN",
+      "date": "2026-07-01",
+      "noVigProbability": {
+        "home": 0.4284,
+        "draw": 0.305,
+        "away": 0.2666
+      },
+      "bookmakerCount": 2
+    },
+    "USA|BIH": {
+      "home": "USA",
+      "away": "BIH",
+      "date": "2026-07-02",
+      "noVigProbability": {
+        "home": 0.6899,
+        "draw": 0.1909,
+        "away": 0.1193
+      },
+      "bookmakerCount": 3
+    },
+    "ESP|AUT": {
+      "home": "ESP",
+      "away": "AUT",
+      "date": "2026-07-02",
+      "noVigProbability": {
+        "home": 0.7137,
+        "draw": 0.1836,
+        "away": 0.1027
+      },
+      "bookmakerCount": 2
+    },
+    "POR|CRO": {
+      "home": "POR",
+      "away": "CRO",
+      "date": "2026-07-02",
+      "noVigProbability": {
+        "home": 0.5383,
+        "draw": 0.2754,
+        "away": 0.1863
+      },
+      "bookmakerCount": 2
+    },
+    "SUI|ALG": {
+      "home": "SUI",
+      "away": "ALG",
+      "date": "2026-07-03",
+      "noVigProbability": {
+        "home": 0.4731,
+        "draw": 0.2949,
+        "away": 0.232
+      },
+      "bookmakerCount": 2
+    },
+    "AUS|EGY": {
+      "home": "AUS",
+      "away": "EGY",
+      "date": "2026-07-03",
+      "noVigProbability": {
+        "home": 0.2847,
+        "draw": 0.3332,
+        "away": 0.3821
+      },
+      "bookmakerCount": 3
+    },
+    "ARG|CPV": {
+      "home": "ARG",
+      "away": "CPV",
+      "date": "2026-07-03",
+      "noVigProbability": {
+        "home": 0.8213,
+        "draw": 0.1227,
+        "away": 0.0559
+      },
+      "bookmakerCount": 2
+    },
+    "COL|GHA": {
+      "home": "COL",
+      "away": "GHA",
+      "date": "2026-07-04",
+      "noVigProbability": {
+        "home": 0.6237,
+        "draw": 0.2464,
+        "away": 0.1299
+      },
+      "bookmakerCount": 3
+    },
+    "CAN|MAR": {
+      "home": "CAN",
+      "away": "MAR",
+      "date": "2026-07-04",
+      "noVigProbability": {
+        "home": 0.195,
+        "draw": 0.2678,
+        "away": 0.5372
+      },
+      "bookmakerCount": 2
+    }
+  }
+}
