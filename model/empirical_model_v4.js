@@ -9,6 +9,7 @@
  */
 
 const fs = require('fs');
+const path = require('path');
 
 // Seeded random number generator (mulberry32)
 function mulberry32(a) {
@@ -39,10 +40,11 @@ function parseCSV(content) {
 }
 
 // Load data
-const simulationDataPath = '/Users/j.schlosser/Documents/New project/wm_2026_simulation_data.json';
+const ROOT = path.resolve(__dirname, '..');
+const simulationDataPath = path.join(ROOT, 'data/wm_2026_simulation_data.json');
 const simulationData = JSON.parse(fs.readFileSync(simulationDataPath, 'utf8'));
 
-const csvPath = '/Users/j.schlosser/Documents/New project/international_results.csv';
+const csvPath = path.join(ROOT, 'data/international_results.csv');
 const csvContent = fs.readFileSync(csvPath, 'utf8');
 const historicalMatches = parseCSV(csvContent);
 
@@ -258,7 +260,7 @@ console.log(`Calibration target draw rate: 23.15%`);
 
 // Save predictions
 fs.writeFileSync(
-  '/Users/j.schlosser/Documents/New project/empirical_predictions_v4.json',
+  path.join(ROOT, 'model/empirical_predictions_v4.json'),
   JSON.stringify(predictions, null, 2)
 );
 

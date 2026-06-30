@@ -698,7 +698,7 @@ init().catch((error) => {
 // Register service worker for PWA / offline support
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/app/sw.js', { scope: '/' })
+    navigator.serviceWorker.register('/app/sw.js', { scope: '/app/' })
       .then(() => console.log('[SW] Registered'))
       .catch((err) => console.warn('[SW] Registration failed:', err));
   });

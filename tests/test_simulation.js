@@ -61,49 +61,45 @@ console.log('\n📦 Test: Simulation data structure');
 assert(simData && Array.isArray(simData.matches), 'simData has matches array');
 assert(simData.matches.length === 72, `72 WC matches (got ${simData.matches?.length})`);
 assert(typeof simData.teams === 'object', 'simData has teams');
-assert(typeof simData.learnedModel === 'object', 'simData has learnedModel');
-assert(typeof simData.learnedModel.eloDiffBuckets === 'object', 'learnedModel has eloDiffBuckets');
+assert(typeof simData.offensiveRatings === 'object', 'simData has offensiveRatings');
+assert(typeof simData.defensiveRatings === 'object', 'simData has defensiveRatings');
+assert(typeof simData.calibration === 'object', 'simData has calibration');
+assert(typeof simData.calibration.avgGoals === 'number', `calibration.avgGoals is a number (${simData.calibration?.avgGoals})`);
 
-const buckets = Object.keys(simData.learnedModel.eloDiffBuckets);
-assert(buckets.length >= 10, `learnedModel has ${buckets.length} ELO buckets (≥10 expected)`);
-
-// ─── Test: Learned model probability sums ───────────────────────────────────
-console.log('\n📦 Test: Learned model probabilities sum to 1.0');
-let badBuckets = 0;
-for (const [key, b] of Object.entries(simData.learnedModel.eloDiffBuckets)) {
-  const sum = b.home + b.draw + b.away;
-  if (Math.abs(sum - 1.0) > 0.01) badBuckets++;
-}
-assert(badBuckets === 0, `All ELO buckets sum to ~1.0 (${badBuckets} bad buckets)`);
-
-// ─── Test: ELO bucket lookup logic (mirrors simulation.js) ──────────────────
-console.log('\n📦 Test: ELO bucket lookup (core model logic)');
-function ratingProbabilities(homeRating, awayRating) {
-  const eloDiff = homeRating - awayRating;
-  const bucketDiff = Math.round(eloDiff / 10) * 10;
-  let bucket = simData.learnedModel.eloDiffBuckets[bucketDiff];
-  if (!bucket) {
-    const bucketKeys = Object.keys(simData.learnedModel.eloDiffBuckets).map(Number);
-    const nearestKey = bucketKeys.reduce((a, b) =>
-      Math.abs(a - bucketDiff) < Math.abs(b - bucketDiff) ? a : b);
-    bucket = simData.learnedModel.eloDiffBuckets[nearestKey];
-  }
-  return { home: bucket.home, draw: bucket.draw, away: bucket.away };
+// ─── Test: ELO formula (mirrors ratingProbabilities in simulation.js) ────────
+console.log('\n📦 Test: ELO logistic model (core probability logic)');
+const HOSTS_TEST = new Set(['USA', 'MEX', 'CAN']);
+function ratingProbabilities(homeCode, awayCode) {
+  const ht = simData.teams[homeCode], at = simData.teams[awayCode];
+  if (!ht || !at) return { home: 0.38, draw: 0.24, away: 0.38 };
+  const homeAdv = HOSTS_TEST.has(homeCode) ? (simData.settings.hostBonusRatingPoints || 55) : 0;
+  const diff = (ht.elo - at.elo) + homeAdv;
+  const ph = 1 / (1 + Math.pow(10, -diff / 400));
+  const rawDiff = Math.abs(ht.elo - at.elo);
+  const pd = Math.max(0.16, Math.min(0.32, 0.30 - rawDiff / 2000));
+  const pa = Math.max(0.02, 1 - ph - pd);
+  const tot = ph + pd + pa;
+  return { home: ph / tot, draw: pd / tot, away: pa / tot };
 }
 
-// Strong home team (+200 ELO) should heavily favour home
-const strongHome = ratingProbabilities(2000, 1800);
-assert(strongHome.home > 0.5, `Strong home (+200 ELO) P(home)=${strongHome.home.toFixed(3)} > 0.5`);
-assert(strongHome.away < strongHome.home, 'Strong home: P(home) > P(away)');
+// Strong favourite (GER vs CUW: ~+370 ELO) should give >75% to stronger team
+const gerCuw = ratingProbabilities('GER', 'CUW');
+assert(gerCuw.home > 0.75, `GER vs CUW P(GER)=${gerCuw.home.toFixed(3)} > 0.75`);
+assert(gerCuw.draw >= 0.12, `GER vs CUW draw=${gerCuw.draw.toFixed(3)} >= 0.12 (floor after normalisation)`);
 
-// Even ELO → home advantage still applies (empirical), home >= away expected
-const even = ratingProbabilities(1900, 1900);
-assert(even.home >= even.away, `Even ELO: P(home)=${even.home.toFixed(3)} ≥ P(away)=${even.away.toFixed(3)} (home advantage in data)`);
-assert(even.draw > 0.2, `Even match draw rate=${even.draw.toFixed(3)} > 0.2`);
+// Even match: probs should be roughly symmetric, draw > 0.20
+const braArg = ratingProbabilities('BRA', 'ARG');
+assert(Math.abs(braArg.home - braArg.away) < 0.15, `BRA vs ARG is close: H=${braArg.home.toFixed(3)} A=${braArg.away.toFixed(3)}`);
+assert(braArg.draw > 0.20, `BRA vs ARG draw=${braArg.draw.toFixed(3)} > 0.20`);
 
-// Probabilities sum to 1
-assertClose(strongHome.home + strongHome.draw + strongHome.away, 1.0, 0.01, 'Probs sum to 1 (strong home)');
-assertClose(even.home + even.draw + even.away, 1.0, 0.01, 'Probs sum to 1 (even match)');
+// Host (USA) gets home bonus vs equal opponent
+const usaVsX = ratingProbabilities('USA', 'MEX');
+const mexVsUsa = ratingProbabilities('MEX', 'USA');
+assert(usaVsX.home !== mexVsUsa.home, 'Host bonus breaks symmetry for USA vs MEX');
+
+// Probabilities always sum to 1
+assertClose(gerCuw.home + gerCuw.draw + gerCuw.away, 1.0, 0.01, 'Probs sum to 1 (GER vs CUW)');
+assertClose(braArg.home + braArg.draw + braArg.away, 1.0, 0.01, 'Probs sum to 1 (BRA vs ARG)');
 
 // ─── Test: Odds snapshot integrity ──────────────────────────────────────────
 console.log('\n📦 Test: Odds snapshot integrity');

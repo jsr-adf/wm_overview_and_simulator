@@ -11,11 +11,11 @@ from datetime import date
 from pathlib import Path
 
 
-PROJECT_DIR = Path(__file__).resolve().parent
-MATCHES_PATH = PROJECT_DIR / "wm_2026_matches_fifa.json"
-RANKING_PATH = PROJECT_DIR / "fifa_mens_ranking_latest.json"
-RESULTS_PATH = PROJECT_DIR / "international_results.csv"
-OUTPUT_PATH = PROJECT_DIR / "wm_2026_simulation_data.json"
+PROJECT_DIR = Path(__file__).resolve().parent.parent
+MATCHES_PATH = PROJECT_DIR / "data" / "wm_2026_matches_fifa.json"
+RANKING_PATH = PROJECT_DIR / "data" / "fifa_mens_ranking_latest.json"
+RESULTS_PATH = PROJECT_DIR / "data" / "international_results.csv"
+OUTPUT_PATH = PROJECT_DIR / "data" / "wm_2026_simulation_data.json"
 
 NAME_ALIASES = {
     "USA": "United States",
@@ -53,6 +53,70 @@ def tournament_k(tournament: str) -> int:
     if any(key in name for key in ["nations league", "copa américa", "african cup", "asian cup", "gold cup", "euro"]):
         return 45
     return 28
+
+
+def compute_offensive_defensive_ratings(
+    wc_teams: set[str], code_to_name: dict[str, str]
+) -> tuple[dict[str, float], dict[str, float]]:
+    """Attack/defence strengths from recent international results, normalised to 1.0.
+
+    The CSV uses full country names; we build a name→code lookup from the FIFA
+    rankings data so we can aggregate by FIFA code.
+    """
+    # name → code, covering both canonical names and aliases
+    name_to_code: dict[str, str] = {}
+    for code, name in code_to_name.items():
+        name_to_code[name.lower()] = code
+        # Also map the alias targets (e.g. "South Korea" → "KOR")
+        for alias_from, alias_to in NAME_ALIASES.items():
+            if alias_to.lower() == name.lower():
+                name_to_code[alias_from.lower()] = code
+
+    goals_for: defaultdict[str, list[float]] = defaultdict(list)
+    goals_against: defaultdict[str, list[float]] = defaultdict(list)
+    cutoff = date(2022, 1, 1)
+
+    with RESULTS_PATH.open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            if row["home_score"] == "NA" or row["away_score"] == "NA":
+                continue
+            played = date.fromisoformat(row["date"])
+            if played < cutoff:
+                continue
+            home_code = name_to_code.get(row["home_team"].lower())
+            away_code = name_to_code.get(row["away_team"].lower())
+            if not home_code or not away_code:
+                continue
+            hs, as_ = int(row["home_score"]), int(row["away_score"])
+            tk = tournament_k(row["tournament"])
+            w = tk / 28.0
+            goals_for[home_code].append(hs * w)
+            goals_against[home_code].append(as_ * w)
+            goals_for[away_code].append(as_ * w)
+            goals_against[away_code].append(hs * w)
+
+    all_gf = [g for v in goals_for.values() for g in v]
+    league_avg = sum(all_gf) / len(all_gf) if all_gf else 1.0
+
+    raw_off: dict[str, float] = {}
+    raw_def: dict[str, float] = {}
+    for code in wc_teams:
+        gf = goals_for.get(code, [])
+        ga = goals_against.get(code, [])
+        avg_gf = sum(gf) / len(gf) if gf else league_avg
+        avg_ga = sum(ga) / len(ga) if ga else league_avg
+        raw_off[code] = avg_gf / league_avg
+        raw_def[code] = league_avg / avg_ga if avg_ga > 0 else 1.0
+
+    # Normalise so the mean across WC teams equals 1.0 — keeps the simulation
+    # calibrated regardless of which era's matches dominate the raw averages.
+    off_mean = sum(raw_off.values()) / len(raw_off) if raw_off else 1.0
+    def_mean = sum(raw_def.values()) / len(raw_def) if raw_def else 1.0
+
+    offensive = {c: round(v / off_mean, 4) for c, v in raw_off.items()}
+    defensive = {c: round(v / def_mean, 4) for c, v in raw_def.items()}
+
+    return offensive, defensive
 
 
 def compute_elo_and_calibration() -> tuple[dict[str, float], dict[str, float]]:
@@ -119,6 +183,16 @@ def main() -> None:
             "elo": round(elo.get(canonical_name(name), 1500.0), 1),
         }
 
+    # Collect WC team codes and compute offensive/defensive ratings
+    wc_codes: set[str] = set()
+    for raw in matches_payload["Results"]:
+        if localized(raw.get("StageName")) != "First Stage":
+            continue
+        wc_codes.add(raw["Home"]["IdCountry"])
+        wc_codes.add(raw["Away"]["IdCountry"])
+    code_to_name = {code: info["name"] for code, info in rankings.items()}
+    offensive_ratings, defensive_ratings = compute_offensive_defensive_ratings(wc_codes, code_to_name)
+
     groups: dict[str, dict[str, dict]] = defaultdict(dict)
     matches = []
     for raw in sorted(matches_payload["Results"], key=lambda item: int(item["MatchNumber"])):
@@ -161,6 +235,8 @@ def main() -> None:
         "teams": rankings,
         "groups": groups,
         "matches": matches,
+        "offensiveRatings": offensive_ratings,
+        "defensiveRatings": defensive_ratings,
     }
     OUTPUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Wrote {OUTPUT_PATH} with {len(matches)} matches and {sum(len(v) for v in groups.values())} teams.")

@@ -229,6 +229,7 @@ def main() -> None:
         "provider": "Odds-API.io",
         "createdAt": datetime.now(timezone.utc).isoformat(),
         "bookmakers": bookmakers.split(","),
+        "blendWeight": 0.65,
         "requestStrategy": "one /events request for the tournament date range, then /odds/multi in chunks of 10 event IDs",
         "eventPoolSize": len(events),
         "coverage": {
